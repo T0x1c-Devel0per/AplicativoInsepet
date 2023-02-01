@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/login.css">
+    <script src="/JS/login.js"></script>
+
+</head>
+<body>
+    <p class="tip"></p>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Inicie Sesión</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Contraseña</span>
+                <input type="password" />
+            </label>
+            <button type="button" class="submit">Iniciar Sesión</button>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae fugit corporis iste. In assumenda expedita cumque optio. Qui modi vel quos saepe sit eligendi odit et tempore quae esse!</p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos ducimus vitae sed magnam repellat repudiandae neque, consequatur autem, nam quaerat. Nihil ipsa maiores vel minus rerum mollitia voluptate itaque.</p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Registrarse</span>
+                    <span class="m--in">Iniciar Sesión</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Registrarse</h2>
+                <label>
+                    <span>Nombre</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Contraseña</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.img__btn').addEventListener('click', function () {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+</script>
+</html>
