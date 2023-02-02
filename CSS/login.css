@@ -61,10 +61,14 @@ button {
   display: block;
   margin: 0 auto;
   width: 260px;
-  height: 36px;
-  border-radius: 30px;
   color: #fff;
+  line-height: 50px;
+  text-align: center;
+  background: rgb(0, 0, 0);
   font-size: 15px;
+  text-transform: Uppercase;
+  font-weight: 600;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -136,8 +140,9 @@ button {
   width: 160px;
   height: 36px;
   margin: 0 auto;
-  background: transparent;
-  color: #fff;
+  background: black;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 15px;
   cursor: pointer;
@@ -150,7 +155,6 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #fff;
   border-radius: 30px;
 }
 .img__btn span {
@@ -212,7 +216,7 @@ input {
 .submit {
   margin-top: 40px;
   margin-bottom: 20px;
-  background: #d4af7a;
+  background: #000000;
   text-transform: uppercase;
 }
 

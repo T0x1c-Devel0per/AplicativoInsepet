@@ -1,4 +1,4 @@
-z
+
 /*************************************ValidarFormulario****************************************/
 function validar() {
     if ($('#razonSocial').val().length == 0) {
@@ -405,54 +405,94 @@ function IterarCamposEdit($cols, tarea) {
 }
 /********************AgregarSeccionFotos**************************/
 var contador = 1, count1 = 1, count2 = 1, count3 = 1, count4 = 1, count5 = 1, count6 = 1, count7 = 1, count8 = 1,count9 = 1,count10 = 1,count11 = 1;
-var id1 = 2;
-var id2 = 3;
+var id1 = 3, id2 = 1;
+var id3 = 3, id4 = 1;
+var id5 = 3, id6 = 1;
+var id7 = 3, id8 = 1;
+var id9 = 3, id10 = 1;
+var id11 = 3, id12 = 1;
+var id13 = 3, id14 = 1;
+var id15 = 3, id16 = 1;
+var id17 = 3, id18 = 1;
+var id19 = 3, id20 = 1;
+var id21 = 3, id22 = 1;
+var id23 = 3, id24 = 1;
 
 function agregarHtlm(){
     count1++;
-    id1++;
-    id2++;
     let contenedor = document.querySelector('#fotosSecciones');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row"> 
-                                    <h1 style="text-align: center;" > Equipo1</h1>                                
-                                    <div class="col-6">
-                                        <h1 style="text-align: center;">Antes</h1>
-                                        <div class="center">
-                                            <div class="form-input">
-                                                <label for="file-ip-`+id1+`">Upload Image</label>
-                                                <input type="file" id="file-ip-`+id1+`" accept="image/*" onchange="showPreview`+id1+`(event);">
-                                                <div class="preview">
-                                                    <img id="file-ip-1-preview`+id1+`">
+    p.innerHTML = `<div class="row">
+                        <h1> Equipo1</h1>
+                            <div class="col-6">
+                                <h1 style="text-align: center;">Antes</h1>
+                                <div class="container">
+                                    <input type="file" id="file" accept="image/*" hidden>
+                                    <div class="img-area" data-img="">
+                                        <div class="form-element">
+                                            <label for="file-1-`+ id1 + `" id="file-1-` + id1 +`-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
                                                 </div>
-                                            </div>
+                                            </label>
                                         </div>
                                     </div>
-
-                                    <div class="col-6">
-                                        <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
-                                            <div class="center">
-                                                <div class="form-input">
-                                                    <label for="file-ip-`+id2+`">Upload Image</label>
-                                                    <input type="file" id="file-ip-`+id2+`" accept="image/*" onchange="showPreview`+id2+`(event);">
-                                                    <div class="preview">
-                                                        <img id="file-ip-1-preview`+id2+`">
-                                                    </div>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-1-`+ id1 +`" accept="image/*">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h1 style="text-align: center;">Despues</h1>
+                                <div class="container">
+                                    <input type="file" id="file" accept="image/*" hidden>
+                                    <div class="img-area" data-img="">
+                                        <div class="form-element">
+                                            <label for="file-2-`+ id2 + `" id="file-2-` + id2 +`-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
                                                 </div>
-                                            </div>
+                                            </label>
                                         </div>
                                     </div>
-                                    <div class="col-12 d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;padding-bottom: 50px;">
-                                        <div class="container">
-                                            <h1>Descripción Procedimiento</h1>
-                                            <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                        </div>
-                                            
-                                    </div>
-                               </div>`;
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-2-`+id2+`" accept="image/*">
+                                    </label>                                                
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
+                            </div>
+                        </div>`;
         contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200){
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-1-"+id1);
+    previewBeforeUpload("file-2-"+id2);
+    id1++;
+    id2++;
     
 }
 function agregarHtlm1() {
@@ -461,15 +501,25 @@ function agregarHtlm1() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count1 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-3-`+ id3 + `" id="file-3-` + id3 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-3-`+ id3 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -477,19 +527,46 @@ function agregarHtlm1() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-4-`+ id4 + `" id="file-4-` + id4 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-4-`+ id4 +`" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Tanque #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
+                                    
     contenedor.appendChild(p);
+    function previewBeforeUpload1(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload1("file-3-" + id3);
+    previewBeforeUpload1("file-4-" + id4);
+    id3++;
+    id4++;
 }
 function agregarHtlm2() {
     count2++
@@ -497,15 +574,25 @@ function agregarHtlm2() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count1 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-5-`+ id5 + `" id="file-5-` + id5 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-5-`+ id5 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -513,19 +600,50 @@ function agregarHtlm2() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-6-`+ id6 + `" id="file-6-` + id6 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-6-`+ id6 +`" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-5-" + id5);
+    previewBeforeUpload("file-6-" + id6);
+    id5++;
+    id6++;
+
 }
 function agregarHtlm3() {
     count3++
@@ -533,15 +651,25 @@ function agregarHtlm3() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count3 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-7-`+ id7 + `" id="file-7-` + id7 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-7-`+ id7 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -549,19 +677,49 @@ function agregarHtlm3() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-8-`+ id8 + `" id="file-8-` + id8 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-8-`+ id8 +`" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-7-" + id7);
+    previewBeforeUpload("file-8-" + id8);
+    id7++;
+    id8++;
 }
 function agregarHtlm4() {
     count4++
@@ -569,15 +727,25 @@ function agregarHtlm4() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count4 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-9-`+ id9 + `" id="file-9-` + id9 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-9-`+ id9 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -585,19 +753,49 @@ function agregarHtlm4() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-10-`+ id10 + `" id="file-10-` + id10 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-10-`+ id10 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-9-" + id9);
+    previewBeforeUpload("file-10-" + id10);
+    id9++;
+    id10++;
 }
 function agregarHtlm5() {
     count5++
@@ -605,15 +803,25 @@ function agregarHtlm5() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count5 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-11-`+ id11 + `" id="file-11-` + id11 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-11-`+ id11 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -621,19 +829,49 @@ function agregarHtlm5() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-12-`+ id12 + `" id="file-12-` + id12 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-12-`+ id12 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-11-" + id11);
+    previewBeforeUpload("file-12-" + id12);
+    id11++;
+    id12++;
 }
 function agregarHtlm6() {
     count6++
@@ -641,15 +879,25 @@ function agregarHtlm6() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count5 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-13-`+ id13 + `" id="file-13-` + id13 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-13-`+ id13 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -657,19 +905,49 @@ function agregarHtlm6() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-14-`+ id14 + `" id="file-14-` + id14 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-14-`+ id14 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-13-" + id13);
+    previewBeforeUpload("file-14-" + id14);
+    id13++;
+    id14++;
 }
 function agregarHtlm7() {
     count7++
@@ -677,15 +955,25 @@ function agregarHtlm7() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count7 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-15-`+ id15 + `" id="file-15-` + id15 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-15-`+ id15 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -693,19 +981,49 @@ function agregarHtlm7() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-16-`+ id16 + `" id="file-16-` + id16 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-16-`+ id16 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-15-" + id15);
+    previewBeforeUpload("file-16-" + id16);
+    id15++;
+    id16++;
 }
 function agregarHtlm8() {
     count8++
@@ -713,15 +1031,25 @@ function agregarHtlm8() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count8 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-17-`+ id17 + `" id="file-17-` + id17 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-17-`+ id17 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -729,19 +1057,49 @@ function agregarHtlm8() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-18-`+ id18 + `" id="file-18-` + id18 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-18-`+ id18 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-17-" + id17);
+    previewBeforeUpload("file-18-" + id18);
+    id17++;
+    id18++;
 }
 function agregarHtlm9() {
     count9++
@@ -749,15 +1107,25 @@ function agregarHtlm9() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count9 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-19-`+ id19 + `" id="file-19-` + id19 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-19-`+ id19 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -765,19 +1133,49 @@ function agregarHtlm9() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-20-`+ id20 + `" id="file-20-` + id20 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-20-`+ id20 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-19-" + id19);
+    previewBeforeUpload("file-20-" + id20);
+    id19++;
+    id20++;
 }
 function agregarHtlm10() {
     count10++
@@ -785,15 +1183,25 @@ function agregarHtlm10() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count10 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-21-`+ id21 + `" id="file-21-` + id21 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-21-`+ id21 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -801,19 +1209,49 @@ function agregarHtlm10() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-22-`+ id22 + `" id="file-22-` + id22 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-22-`+ id22 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-21-" + id21);
+    previewBeforeUpload("file-22-" + id22);
+    id21++;
+    id22++;
 }
 function agregarHtlm11() {
     count11++
@@ -821,15 +1259,25 @@ function agregarHtlm11() {
     let p = document.createElement('div');
     p.setAttribute("class", "container");
     p.innerHTML = `<div class="row">
-                        <h1> Equipo#`+ count10 + `</h1>                                
+                        <h1> Equipo1</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-23-`+ id23 + `" id="file-23-` + id23 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-23-`+ id23 + `" accept="image/*">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -837,19 +1285,49 @@ function agregarHtlm11() {
                                 <div class="container">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
-                                        <ion-icon name="image-outline"></ion-icon>
+                                        <div class="form-element">
+                                            <label for="file-24-`+ id24 + `" id="file-24-` + id24 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <button class="select-image">Select Image</button>
+                                    <label class="botonLabel d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <input type="file" id="file-24-`+ id24 + `" accept="image/*">
+                                    </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion" style="display: flex; flex-direction: column; justify-content: center;" >
-                                <div class="container"style="padding-bottom: 50px;">
-                                    <h1 >Descripción Procedimiento Consola #1</h1>
-                                    <textarea class="textArea" placeholder= "Describa el proceso que se realizado a los equipos...."></textarea>                                            
-                                </div>            
+                            <div class="col d-flex justify-content-center contDescripcion"
+                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                <div class="container">
+                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                </div>
                             </div>
                         </div>`;
     contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+            document.querySelector("#" + id + "-preview div").innerText = file.name;
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-23-" + id23);
+    previewBeforeUpload("file-24-" + id24);
+    id23++;
+    id24++;
 }
 
 ///////////////////////////////////////////////////////////////////
