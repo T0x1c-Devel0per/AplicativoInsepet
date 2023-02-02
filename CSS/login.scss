@@ -10,7 +10,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    background: dimgrey;
+}
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     background: #ededed;
@@ -54,6 +56,8 @@ $diffRatio: (
     height: 550px;
     margin: 0 auto 100px;
     background: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 .form {
