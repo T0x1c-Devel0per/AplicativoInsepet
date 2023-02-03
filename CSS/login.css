@@ -337,7 +337,7 @@ header {
 
 #active {
   display: flex;
-  background: #348db8;
+  background: #ffffff;
 }
 
 .active:hover {
