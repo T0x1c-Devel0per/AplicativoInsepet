@@ -40,16 +40,13 @@
         <div class="canvas-wrap" style="padding-right: 12px;">
             <canvas id="canvas"></canvas>
         </div>
-        <div class="content">
-            <h1>Aplicativo Web</h1>
-        </div>
     </div>
     <div class="container-fluid">
         <div id="encabezado" style="background-color: #474747; display: none;">
             <div class="container">
                 <div class="container" style="position: absolute;">
                     <div class="row">
-                        <h1 style="font-size: 25px; text-align: center; padding-top: 30px;">Informe Mantenimiento EDS</h1>
+                        <h1 style="font-size: 25px; text-align: center;">Informe Mantenimiento EDS</h1>
         
                         <div class="col-4">
                             <img src="/IMG/logo-insepet1.png">
@@ -71,25 +68,46 @@
             </svg>
         </div>
         <div class="container" id="seccion1">
-            <div class="card border-dark mb-12" style="margin-top:20px;">
-                <div class="card-header bg-transparent border-dark"><b>Beneficios Servicio Técnico</b></div>
-                <div class="card-body text-dark">
-                    <p class="card-text">- Comprometidos con hacer de su EDS un lugar seguro y productivo.</p>
-                    <p>- Línea VIP para atención de emergencias en su EDS de forma prioritaria.</p>
-                    <p>- Evita las paradas de tu EDS realizando mantenimiento preventivo.</p>
-                </div>
-                <div class="card-footer bg-transparent border-dark">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-6 text-center">
-                            <b>Cotización No:</b> <input type="number" style="width: 100%;">
-                        </div>
-                        <div class="col-6 text-center">
-                            <b>Versión:</b><input type="text" style="width: 100%;">
-                        </div>
+            <div class="col" id="infoImportante" style="display: block; margin-top: 25px;">
+                <div class="card mb-12">
+                    <img class="card-img-top" src="/IMG/headerFondo.jpg" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                        <p class="card-text">- Comprometidos con hacer de su EDS un lugar seguro y productivo.</p>
+                        <p>- Línea VIP para atención de emergencias en su EDS de forma prioritaria.</p>
+                        <p>- Evita las paradas de tu EDS realizando mantenimiento preventivo.</p>
                     </div>
                 </div>
             </div>
+
+            
+            
             <div class="row" id="formRazon">
+                <div class="col" id="tablaAtencion" style="margin-top: 20px;">
+                    <div class="card border-dark mb-3">
+                        <div class="card-header text-center"><b>Señores:</b><input type="tel"></div>
+                        <div class="card-body text-dark" style="height: 90%; ">
+                            <div class="row">
+                                <div class="col text-center w-100">
+                                    <b class="card-title">Atencion:</b>
+                                    <input type="text" placeholder="Atencion">
+                                </div>
+                                <div class="col text-center w-100">
+                                    <b class="card-title">Asunto: &nbsp&nbsp</b>
+                                    <input type="text" placeholder="Asunto">
+                                </div>
+                                <div class="col text-center w-100">
+                                    <b class="card-title">#Pedido: &nbsp</b>
+                                    <input type="text" placeholder="Pedido">
+                                </div>
+                                <div class="col text-center w-100">
+                                    <b class="card-title">Version: &nbsp&nbsp</b>
+                                    <input type="text" placeholder="Version">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">Bogotá D.C., 00/00/00</div>
+                    </div>
+                </div>
                 <div class="col">
                     <br>
                     <form id="formularioRazon" onsubmit="return false">
@@ -131,37 +149,12 @@
                             </div>
                         </div>
                         <br>
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center"><b>Señores:</b> Organización Terpel S.A</div>
-                            <div class="card-body text-dark">
-                                <div class="row">
-                                    <div class="col text-center">
-                                        <b class="card-title">Atencion</b>
-                                        <p class="card-text">Juan Pablo Ortiz</p>
-                                    </div>
-                                    <div class="col text-center">
-                                        <b class="card-title">Asunto</b>
-                                        <p class="card-text">Juan Pablo Ortiz</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">Bogotá D.C., 00/00/00</div>
-                        </div>
                     </form>
                     <button class="btn-theme-sm  btn-base-bg text-uppercase margin-b-30" form="formularioRazon" style="margin-top:20px;margin-bottom: 20px;" id="ocultarContenido" onclick="validar()">Continuar</button>
                 </div>
-                <div class="col" id="infoImportante" style="display: block; margin-top: 25px;">
-                    <div class="card mb-12">
-                        <img class="card-img-top" src="/IMG/headerFondo.jpg" alt="Card image cap" style="height: 245px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Importante</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="container" id="seccionApp02" style="display: none; padding-bottom: 190px;">
+        <div class="container" id="seccionApp02" style="display: block;">
             <div class="container" id="tituloSeleccion">
                 <h1 class="container d-flex justify-content-center" style="text-align: center; padding-top: 200px;">Seleccione tipo de mantenimiento</h1>
             </div>   
@@ -200,7 +193,7 @@
                     <button class="btn-theme-sm  btn-base-bg text-uppercase margin-b-30" style="margin-top:20px" id="ocultarContenido" onclick="ocultarSeccion2() + mostrarSeccion1()">ATRAS</button>
                 </div>
             </div>
-                <div id="div1" class="container" style="display:none; padding-top: 65px;">
+                <div id="div1" class="container" style="display:none; margin-top:150px;">
                     <h1 style="font-size: 20px;font-weight: bold;text-align: center;">Mantenimiento Correctivo</h1>        
                     <div class="container" id = "seleccionMant">
                         <div class="row d-flex justify-content-center">
@@ -233,7 +226,7 @@
                                     <img src="./IMG/electrical-panel.gif" checked style="width: 200; height: 200px;">
                                     <input type="checkbox" name="check" id="sistemasnx1" value="1" onchange="javascript:showContent8()"
                                         style="width: 40px; height: 20px;" />
-                                    <p>Tablero Electrico</p>
+                                    <p>Tablero Eléctrico</p>
                                 </label>
                             </div>
                         </div>
@@ -267,12 +260,12 @@
                                     <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container"> 
+                            <div class="container" style="margin-bottom: 100px;"> 
                                <div class="row" id ="dispensadores01">
-                                    <h1> Equipo1</h1>
+                                    <h1> Equipo 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -285,14 +278,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-1-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -306,16 +299,15 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-1-2" accept="image/*">
                                             </label>
                                                                                         
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style=" margin-bottom: 100px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Procedimiento Equipo #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -352,12 +344,12 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container">
+                            <div class="container" style="margin-bottom: 100px;">
                                 <div class="row" id="TanquesyBombas1">
-                                    <h1> Equipo1</h1>
+                                    <h1> Tanque 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -370,14 +362,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-3-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -391,16 +383,16 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-3-2" accept="image/*">
                                             </label>
                                     
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                        style="display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Procedimiento Tanque #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -440,12 +432,12 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container">
+                            <div class="container" style="margin-bottom: 100px;">
                                 <div class="row" id="controlVentas1">
-                                    <h1> Equipo1</h1>
+                                    <h1> Equipo 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -458,14 +450,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-5-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -479,16 +471,16 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-5-2" accept="image/*">
                                             </label>
                                     
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                        style="display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Control Ventas #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -499,7 +491,7 @@
                         </div>
                     </div>               
                     <div id="tablaSistemasnx1" style="display: none;">
-                        <h1 style="text-align: center;color: #777777">Tablero Electrico</h1>
+                        <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
                         <div class="row">
                             <div class="col-12" id="tablas">
                                 <div class="table-content" style="overflow:auto;">
@@ -525,12 +517,12 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container" id="Snx1">
+                            <div class="container" id="Snx1" style="margin-bottom: 100px;">
                                 <div class="row" id="controlVentas1">
-                                    <h1> Equipo1</h1>
+                                    <h1> Equipo 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -543,14 +535,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-7-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -564,16 +556,16 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-7-2" accept="image/*">
                                             </label>
                                     
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                        style="display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Tablero Eléctrico #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -586,10 +578,8 @@
                     </div>
                 </div>
         
-                <div id="div2" class="container" style="display:none;">
-
-                    <h1>Mantenimiento Preventivo</h1>
-
+                <div id="div2" class="container" style="display:none; margin-top:150px;">
+                    <h1 style="font-size: 20px;font-weight: bold;text-align: center;">Mantenimiento Preventivo</h1>
                     <div class="container" id="seleccionMant1">
                         <div class="row d-flex justify-content-center">
                             <div class="col-sm d-flex justify-content-center">
@@ -624,7 +614,7 @@
                                     <img src="./IMG/electrical-panel.gif" style="width: 200; height: 200px;">
                                     <input type="checkbox" name="check" id="sistemasnx2" value="1" onchange="javascript:showContent12()"
                                         style="width: 40px; height: 20px;" />
-                                    <p>Tablero Electrico</p>
+                                    <p>Tablero Eléctrico</p>
                                 </label>
                             </div>
                         
@@ -660,66 +650,62 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container">
+                            <div class="container"style="margin-bottom: 100px;">
                                 <div class="row" id="dispensadores01">
-                                        <h1> Equipo1</h1>
-                                        <div class="col-6">
-                                            <h1 style="text-align: center;">Antes</h1>
-                                            <div class="container">
-                                                <input type="file" id="file" accept="image/*" hidden>
-                                                <div class="img-area" data-img="">
-                                                    <div class="form-element">
-                                                        <label for="file-9-1" id="file-9-1-preview">
-                                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                                            <div>
-                                                                <span>+</span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                                    <h1> Equipo 1</h1>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Antes</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                                                    <label for="file-9-1" id="file-9-1-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                     <input type="file" id="file-9-1" accept="image/*">
-                                                </label>
-                                            </div>
+                                            </label>
                                         </div>
-                                        <div class="col-6">
-                                            <h1 style="text-align: center;">Despues</h1>
-                                            <div class="container">
-                                                <input type="file" id="file" accept="image/*" hidden>
-                                                <div class="img-area" data-img="">
-                                                    <div class="form-element">
-                                        
-                                                        <label for="file-9-2" id="file-9-2-preview">
-                                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                                            <div>
-                                                                <span>+</span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Despues</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                                    
+                                                    <label for="file-9-2" id="file-9-2-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                     <input type="file" id="file-9-2" accept="image/*">
-                                                </label>
-                                        
-                                            </div>
+                                            </label>
                                         </div>
-                                        <div class="col d-flex justify-content-center contDescripcion"
-                                            style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
-                                            <div class="container">
-                                                <h1>Descripción Procedimiento TANQUE #1</h1>
-                                                <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                            </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 100px;display: flex; flex-direction: column; justify-content: center;">
+                                        <div class="container">
+                                            <h1>Descripción Procedimiento Equipo #1</h1>
+                                            <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>        
                             <div class="container" id="fotosSecciones2-1">
                             </div>
                         </div>
                     </div>
-
                     <div id="tablaTanques2" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
                         <div class="row">
@@ -747,12 +733,12 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container">
+                            <div class="container"style="margin-bottom: 100px;">
                                 <div class="row" id="TanquesyBombas1">
-                                    <h1> Equipo1</h1>
+                                    <h1> Tanque 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -765,14 +751,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-11-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -786,16 +772,16 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-11-2" accept="image/*">
                                             </label>
                                     
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                        style="display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Procedimiento Tanque #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -835,12 +821,12 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container">
+                            <div class="container" style="margin-bottom: 100px;">
                                 <div class="row" id="controlVentas1">
-                                    <h1> Equipo1</h1>
+                                    <h1> Equipo 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -853,14 +839,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-13-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -874,16 +860,16 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-13-2" accept="image/*">
                                             </label>
                                     
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                        style="display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Control Ventas #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -894,7 +880,7 @@
                         </div>
                     </div>
                     <div id="tablaSistemasnx2" style="display: none;">
-                        <h1 style="text-align: center;color: #777777">Tablero Electrico</h1>
+                        <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
                         <div class="row">
                             <div class="col-12" id="tablas">
                                 <div class="table-content" style="overflow:auto;">
@@ -920,12 +906,12 @@
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
-                            <div class="container" id="Snx1">
+                            <div class="container"style="margin-bottom: 100px;">
                                 <div class="row" id="controlVentas1">
-                                    <h1> Equipo1</h1>
+                                    <h1> Equipo 1</h1>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Antes</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -938,14 +924,14 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-15-1" accept="image/*">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <h1 style="text-align: center;">Despues</h1>
-                                        <div class="container">
+                                        <div class="container d-grid justify-content-center">
                                             <input type="file" id="file" accept="image/*" hidden>
                                             <div class="img-area" data-img="">
                                                 <div class="form-element">
@@ -959,16 +945,16 @@
                                                 </div>
                                             </div>
                                             <label class="botonLabel d-flex justify-content-center">
-                                                <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-15-2" accept="image/*">
                                             </label>
                                     
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                        style="display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento TANQUE #1</h1>
+                                            <h1>Descripción Tablero Eléctrico #1</h1>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -981,8 +967,8 @@
                     </div>
                 </div>
         
-                <div id="div3" class="container" style="display:none;">
-                    <h1>Puesta En Marcha</h1>
+                <div id="div3" class="container" style="display:none; margin-top:150px;">
+                    <h1 style="font-size: 20px;font-weight: bold;text-align: center;">Puesta En Marcha</h1>
                     <div class="container" id="seleccionMant2">
                         <div class="row d-flex justify-content-center">
                             <div class="col d-flex justify-content-center">
@@ -1014,194 +1000,287 @@
                                     <img src="./IMG/electrical-panel.gif" style="width: 200; height: 200px;">
                                     <input type="checkbox" name="check" id="sistemasnx" value="1" onchange="javascript:showContent4()"
                                         style="width: 40px; height: 20px;" />
-                                    <p>Tablero Electrico</p>
+                                    <p>Tablero Eléctrico</p>
                                 </label>
                             </div>
                         </div>
                     </div>
         
-                    <div class="container">
-                        <div id="tablaDispensadores" style="display: none;">
-                            <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
-                            <div class="row">
-                                <div class="col-12" id="tablas">
-                                    <div class="table-content" style="overflow:auto;">
-                                        <table class="table table-borded table-responsive table-striped " id="table-list">
-                                            <thead class="table-dark">
-                                                <tr style="font-size: 10px;">
-                                                    <td>EQUIPO</td>
-                                                    <td>MARCA</td>
-                                                    <td>SERIAL</td>
-                                                    <td>MODELO</td>
-                                                    <td>REFERENCIA</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <button class="btn-info" id="add" onclick="agregarHtlm8();">
-                                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                                    </div>
+                    <div id="tablaDispensadores" style="display: none;">
+                        <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
+                        <div class="row">
+                            <div class="col-12" id="tablas">
+                                <div class="table-content" style="overflow:auto;">
+                                    <table class="table table-borded table-responsive table-striped " id="table-list">
+                                        <thead class="table-dark">
+                                            <tr style="font-size: 10px;">
+                                                <td>EQUIPO</td>
+                                                <td>MARCA</td>
+                                                <td>SERIAL</td>
+                                                <td>MODELO</td>
+                                                <td>REFERENCIA</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn-info" id="add" onclick="agregarHtlm8();">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
-                                <div class="container">
-                                    <div class="row" id="dispensadores01">
-                                        <h1> Equipo1</h1>
-                                        <div class="col-6">
-                                            <h1 style="text-align: center;">Antes</h1>
-                                            <div class="container">
-                                                <input type="file" id="file" accept="image/*" hidden>
-                                                <div class="img-area" data-img="">
-                                                    <div class="form-element">
-                                                        <label for="file-17-1" id="file-17-1-preview">
-                                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                                            <div>
-                                                                <span>+</span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                            </div>
+                            <div class="container "style="margin-bottom: 100px;">
+                                <div class="row" id="dispensadores01">
+                                    <h1> Equipo 1</h1>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Antes</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                                                    <label for="file-17-1" id="file-17-1-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                     <input type="file" id="file-17-1" accept="image/*">
-                                                </label>
-                                            </div>
+                                            </label>
                                         </div>
-                                        <div class="col-6">
-                                            <h1 style="text-align: center;">Despues</h1>
-                                            <div class="container">
-                                                <input type="file" id="file" accept="image/*" hidden>
-                                                <div class="img-area" data-img="">
-                                                    <div class="form-element">
-                                        
-                                                        <label for="file-17-2" id="file-17-2-preview">
-                                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                                            <div>
-                                                                <span>+</span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Despues</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                    
+                                                    <label for="file-17-2" id="file-17-2-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                     <input type="file" id="file-17-2" accept="image/*">
-                                                </label>
-                                        
-                                            </div>
+                                            </label>
+                    
                                         </div>
-                                        <div class="col d-flex justify-content-center contDescripcion"
-                                            style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
-                                            <div class="container">
-                                                <h1>Descripción Procedimiento TANQUE #1</h1>
-                                                <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                            </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center contDescripcion" style= "margin-bottom: 100px; display: flex; flex-direction: column; justify-content: center;">
+                                        <div class="container">
+                                            <h1>Descripción Procedimiento Equipo #1</h1>
+                                            <textarea class="textArea"
+                                                placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container" id="fotosSecciones3-1">
-                            </div>                            
                         </div>
-        
-                        <div id="tablaTanques" style="display: none;">
-                            <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
-                            <div class="row">
-                                <div class="col-12" id="tablas">
-                                    <div class="table-content" style="overflow:auto;">
-                                        <table class="table table-borded table-responsive table-striped " id="table-list1">
-                                            <thead class="table-dark">
-                                                <tr style="font-size: 10px;">
-                                                    <td>TANQUE</td>
-                                                    <td>PRODUCTO</td>
-                                                    <td>CAPACIDAD GL</td>
-                                                    <td>ESTADO</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <button class="btn-info" id="add1" onclick="agregarHtlm9();">
-                                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                                    </div>
+                        <div class="container" id="fotosSecciones3-1">
+                        </div>
+                    </div>
+                    
+                    <div id="tablaTanques" style="display: none;">
+                        <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
+                        <div class="row">
+                            <div class="col-12" id="tablas">
+                                <div class="table-content" style="overflow:auto;">
+                                    <table class="table table-borded table-responsive table-striped " id="table-list1">
+                                        <thead class="table-dark">
+                                            <tr style="font-size: 10px;">
+                                                <td>TANQUE</td>
+                                                <td>PRODUCTO</td>
+                                                <td>CAPACIDAD GL</td>
+                                                <td>ESTADO</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn-info" id="add1" onclick="agregarHtlm9();">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
-                                <div class="container">
-                                    <div class="row" id="TanquesyBombas1">
-                                        <h1> Equipo1</h1>
-                                        <div class="col-6">
-                                            <h1 style="text-align: center;">Antes</h1>
-                                            <div class="container">
-                                                <input type="file" id="file" accept="image/*" hidden>
-                                                <div class="img-area" data-img="">
-                                                    <div class="form-element">
-                                                        <label for="file-19-1" id="file-19-1-preview">
-                                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                                            <div>
-                                                                <span>+</span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                            </div>
+                            <div class="container" style="margin-bottom: 100px;">
+                                <div class="row" id="TanquesyBombas1">
+                                    <h1> Tanque 1</h1>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Antes</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                                                    <label for="file-19-1" id="file-19-1-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
                                                     <input type="file" id="file-19-1" accept="image/*">
-                                                </label>
-                                            </div>
+                                            </label>
                                         </div>
-                                        <div class="col-6">
-                                            <h1 style="text-align: center;">Despues</h1>
-                                            <div class="container">
-                                                <input type="file" id="file" accept="image/*" hidden>
-                                                <div class="img-area" data-img="">
-                                                    <div class="form-element">
-                                        
-                                                        <label for="file-19-2" id="file-19-2-preview">
-                                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                                            <div>
-                                                                <span>+</span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Despues</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                    
+                                                    <label for="file-19-2" id="file-19-2-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
-                                                    <input type="file" id="file-19-2" accept="image/*">
-                                                </label>
-                                        
                                             </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
+                                                    <input type="file" id="file-19-2" accept="image/*">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center contDescripcion"
+                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                        <div class="container">
+                                            <h1>Descripción Procedimiento Tanque #1</h1>
+                                            <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container" id="fotosSecciones3-2">
-                            </div>                            
                         </div>
-        
-                        <div id="consolaVeeder" style="display: none;">
-                            <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
+                        <div class="container" id="fotosSecciones3-2">
+                        </div>
+                    </div>
+                    
+                    <div id="consolaVeeder" style="display: none;">
+                        <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
+                        <div class="row">
+                            <div class="col-12" id="tablas">
+                                <div class="table-content" style="overflow:auto;">
+                                    <table class="table table-borded table-responsive table-striped " id="table-list2">
+                                        <thead class="table-dark">
+                                            <tr style="font-size: 10px;">
+                                                <td>SISTEMA</td>
+                                                <td>IMPRESORAS</td>
+                                                <td>LECTORES</td>
+                                                <td>PANTALLAS</td>
+                                                <td>OPERATIVIDAD</td>
+                                                <td>VERSION SISTEMA</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn-info" id="add2" onclick="agregarHtlm10();">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
+                                </div>
+                            </div>
+                            <div class="container" style="margin-bottom: 100px;">
+                                <div class="row" id="controlVentas1">
+                                    <h1> Equipo 1</h1>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Antes</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                                                    <label for="file-21-1" id="file-21-1-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
+                                                    <input type="file" id="file-21-1" accept="image/*">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 style="text-align: center;">Despues</h1>
+                                        <div class="container d-grid justify-content-center">
+                                            <input type="file" id="file" accept="image/*" hidden>
+                                            <div class="img-area" data-img="">
+                                                <div class="form-element">
+                    
+                                                    <label for="file-21-2" id="file-21-2-preview">
+                                                        <img src="https://bit.ly/3ubuq5o" alt="">
+                                                        <div>
+                                                            <span>+</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label class="botonLabel d-flex justify-content-center">
+                                                <p style="color: white;"><img src="/IMG/add.png">
+                                                    <input type="file" id="file-21-2" accept="image/*">
+                                            </label>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center contDescripcion"
+                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                        <div class="container">
+                                            <h1>Descripción Control Ventas #1</h1>
+                                            <textarea class="textArea"
+                                                placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="fotosSecciones3-3">
+                        </div>
+                    </div>                    
+                    <div id="tablaSistemasnx" style="display: none;">
+                        <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
+                        <div class="container">
                             <div class="row">
                                 <div class="col-12" id="tablas">
                                     <div class="table-content" style="overflow:auto;">
-                                        <table class="table table-borded table-responsive table-striped " id="table-list2">
+                                        <table class="table table-borded table-responsive table-striped " id="table-list3">
                                             <thead class="table-dark">
                                                 <tr style="font-size: 10px;">
-                                                    <td>SISTEMA</td>
-                                                    <td>IMPRESORAS</td>
-                                                    <td>LECTORES</td>
-                                                    <td>PANTALLAS</td>
-                                                    <td>OPERATIVIDAD</td>
-                                                    <td>VERSION SISTEMA</td>
+                                                    <td>REGULADOR</td>
+                                                    <td>UPS</td>
+                                                    <td>TOTALIZADORES</td>
+                                                    <td>PARADA DE EMERGENCIA</td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1210,24 +1289,23 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td></td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <button class="btn-info" id="add2" onclick="agregarHtlm10();">
+                                        <button class="btn-info" id="add3" onclick="agregarHtlm11();">
                                             <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                     </div>
                                 </div>
-                                <div class="container">
+                                <div class="container" style="margin-bottom: 100px;">
                                     <div class="row" id="controlVentas1">
-                                        <h1> Equipo1</h1>
+                                        <h1> Equipo 1</h1>
                                         <div class="col-6">
                                             <h1 style="text-align: center;">Antes</h1>
-                                            <div class="container">
+                                            <div class="container d-grid justify-content-center">
                                                 <input type="file" id="file" accept="image/*" hidden>
                                                 <div class="img-area" data-img="">
                                                     <div class="form-element">
-                                                        <label for="file-21-1" id="file-21-1-preview">
+                                                        <label for="file-23-1" id="file-23-1-preview">
                                                             <img src="https://bit.ly/3ubuq5o" alt="">
                                                             <div>
                                                                 <span>+</span>
@@ -1236,19 +1314,19 @@
                                                     </div>
                                                 </div>
                                                 <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
-                                                    <input type="file" id="file-21-1" accept="image/*">
+                                                    <p style="color: white;"><img src="/IMG/add.png">
+                                                        <input type="file" id="file-23-1" accept="image/*">
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <h1 style="text-align: center;">Despues</h1>
-                                            <div class="container">
+                                            <div class="container d-grid justify-content-center">
                                                 <input type="file" id="file" accept="image/*" hidden>
                                                 <div class="img-area" data-img="">
                                                     <div class="form-element">
-                                        
-                                                        <label for="file-21-2" id="file-21-2-preview">
+                    
+                                                        <label for="file-23-2" id="file-23-2-preview">
                                                             <img src="https://bit.ly/3ubuq5o" alt="">
                                                             <div>
                                                                 <span>+</span>
@@ -1257,115 +1335,25 @@
                                                     </div>
                                                 </div>
                                                 <label class="botonLabel d-flex justify-content-center">
-                                                    <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
-                                                    <input type="file" id="file-21-2" accept="image/*">
+                                                    <p style="color: white;"><img src="/IMG/add.png">
+                                                        <input type="file" id="file-23-2" accept="image/*">
                                                 </label>
-                                        
+                    
                                             </div>
                                         </div>
                                         <div class="col d-flex justify-content-center contDescripcion"
-                                            style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                            style="display: flex; flex-direction: column; justify-content: center;">
                                             <div class="container">
-                                                <h1>Descripción Procedimiento TANQUE #1</h1>
-                                                <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                                <h1>Descripción Tablero Eléctrico #1</h1>
+                                                <textarea class="textArea"
+                                                    placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                             </div>
                                         </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="container" id="fotosSecciones3-3">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div id="tablaSistemasnx" style="display: none;">
-                            <h1 style="text-align: center;color: #777777">Tablero Electrico</h1>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12" id="tablas">
-                                        <div class="table-content" style="overflow:auto;">
-                                            <table class="table table-borded table-responsive table-striped " id="table-list3">
-                                                <thead class="table-dark">
-                                                    <tr style="font-size: 10px;">
-                                                        <td>REGULADOR</td>
-                                                        <td>UPS</td>
-                                                        <td>TOTALIZADORES</td>
-                                                        <td>PARADA DE EMERGENCIA</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <button class="btn-info" id="add3" onclick="agregarHtlm11();">
-                                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                                        </div>
-                                    </div>
-                                    <div class="container" id="Snx1">
-                                        <div class="row" id="controlVentas1">
-                                            <h1> Equipo1</h1>
-                                            <div class="col-6">
-                                                <h1 style="text-align: center;">Antes</h1>
-                                                <div class="container">
-                                                    <input type="file" id="file" accept="image/*" hidden>
-                                                    <div class="img-area" data-img="">
-                                                        <div class="form-element">
-                                                            <label for="file-23-1" id="file-23-1-preview">
-                                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                                <div>
-                                                                    <span>+</span>
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <label class="botonLabel d-flex justify-content-center">
-                                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
-                                                        <input type="file" id="file-23-1" accept="image/*">
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <h1 style="text-align: center;">Despues</h1>
-                                                <div class="container">
-                                                    <input type="file" id="file" accept="image/*" hidden>
-                                                    <div class="img-area" data-img="">
-                                                        <div class="form-element">
-                                
-                                                            <label for="file-23-2" id="file-23-2-preview">
-                                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                                <div>
-                                                                    <span>+</span>
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <label class="botonLabel d-flex justify-content-center">
-                                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
-                                                        <input type="file" id="file-23-2" accept="image/*">
-                                                    </label>
-                                
-                                                </div>
-                                            </div>
-                                            <div class="col d-flex justify-content-center contDescripcion"
-                                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
-                                                <div class="container">
-                                                    <h1>Descripción Procedimiento TANQUE #1</h1>
-                                                    <textarea class="textArea"
-                                                        placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" id="fotosSecciones3-4">
-                                
-                                </div>
+                            <div class="row" id="fotosSecciones3-4">
+                    
                             </div>
                         </div>
                     </div>

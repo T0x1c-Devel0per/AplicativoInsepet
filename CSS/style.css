@@ -33,6 +33,26 @@ input[type=file] {
   padding-top: 150px;
 }
 
+#TanquesyBombas1 {
+  padding-top: 180px;
+}
+
+#controlVentas1 {
+  padding-top: 180px;
+}
+
+#tablaAtencion ::-moz-placeholder {
+  text-align: center;
+}
+
+#tablaAtencion :-ms-input-placeholder {
+  text-align: center;
+}
+
+#tablaAtencion ::placeholder {
+  text-align: center;
+}
+
 .imgEncabezado {
   display: flex;
   position: absolute;
@@ -47,7 +67,7 @@ body {
 }
 
 #tablas {
-  height: 250px;
+  height: 706px;
 }
 
 #formularioRazon {
@@ -66,7 +86,6 @@ p {
   font-size: 17px;
   color: #000000;
   margin-bottom: 0;
-  padding-bottom: 20px;
   line-height: 2;
 }
 
@@ -838,16 +857,12 @@ tbody, td, tfoot, th, thead, tr {
 /***************************************************/
 .img-area {
   position: relative;
-  width: 100%;
-  height: 290px;
+  width: 212px;
+  height: 295px;
   background: var(--grey);
   margin-bottom: 30px;
   border-radius: 15px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border: 1px solid black;
 }
 
@@ -873,8 +888,8 @@ tbody, td, tfoot, th, thead, tr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 213px;
+  height: 293px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

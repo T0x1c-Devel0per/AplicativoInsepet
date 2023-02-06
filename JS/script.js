@@ -537,7 +537,7 @@ function IterarCamposEdit($cols, tarea) {
     }
 }
 /********************AgregarSeccionFotos**************************/
-var contador = 1, count1 = 1, count2 = 1, count3 = 1, count4 = 1, count5 = 1, count6 = 1, count7 = 1, count8 = 1,count9 = 1,count10 = 1,count11 = 1;
+var contador = 1, count1 = 1, count2 = 1, count3 = 1, count4 = 1, count5 = 1, count6 = 1, count7 = 1, count8 = 1,count9 = 1,count10 = 1,count11 = 1; count12=1;
 var id1 = 3, id2 = 1;
 var id3 = 3, id4 = 1;
 var id5 = 3, id6 = 1;
@@ -555,12 +555,12 @@ function agregarHtlm(){
     count1++;
     let contenedor = document.querySelector('#fotosSecciones');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.setAttribute("class", "container ");
+    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+                        <h1> Equipo `+count1+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -573,14 +573,14 @@ function agregarHtlm(){
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-1-`+ id1 +`" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -593,15 +593,15 @@ function agregarHtlm(){
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-2-`+id2+`" accept="image/*">
                                     </label>                                                
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Procedimiento Equipo #`+count1+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -629,15 +629,15 @@ function agregarHtlm(){
     
 }
 function agregarHtlm1() {
-    count1++;
+    count2++;
     let contenedor = document.querySelector('#fotosSecciones1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+                        <h1> Tanque `+count2+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -650,14 +650,14 @@ function agregarHtlm1() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-3-`+ id3 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -670,15 +670,14 @@ function agregarHtlm1() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-4-`+ id4 +`" accept="image/*">
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                            <div class="col d-flex justify-content-center" style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Procedimiento Tanque #`+count2+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -702,15 +701,15 @@ function agregarHtlm1() {
     id4++;
 }
 function agregarHtlm2() {
-    count2++
+    count3++
     let contenedor = document.querySelector('#fotosSecciones2');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
-                            <div class="col-6">
+    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+                        <h1> Equipo `+count3+`</h1>
+                        <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -723,14 +722,14 @@ function agregarHtlm2() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-5-`+ id5 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -743,19 +742,19 @@ function agregarHtlm2() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
-                                        <input type="file" id="file-6-`+ id6 +`" accept="image/*">
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
+                                        <input type="file" id="file-6-`+ id6 + `" accept="image/*">
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                            <div class="col d-flex justify-content-center" style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Control Ventas #`+ count3 +`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                    </div>`;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -779,15 +778,15 @@ function agregarHtlm2() {
 
 }
 function agregarHtlm3() {
-    count3++
+    count4++
     let contenedor = document.querySelector('#tabElectrico1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+                        <h1> Equipo `+count4+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -800,14 +799,14 @@ function agregarHtlm3() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-7-`+ id7 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -820,15 +819,15 @@ function agregarHtlm3() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-8-`+ id8 +`" accept="image/*">
                                     </label>                                                
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Tablero Electrico #`+count4+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -855,15 +854,15 @@ function agregarHtlm3() {
     id8++;
 }
 function agregarHtlm4() {
-    count4++
+    count5++
     let contenedor = document.querySelector('#fotosSecciones2-1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Equipo `+count5+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -876,14 +875,14 @@ function agregarHtlm4() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-9-`+ id9 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -896,7 +895,7 @@ function agregarHtlm4() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-10-`+ id10 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -904,7 +903,7 @@ function agregarHtlm4() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Procedimiento Equipo #`+count5+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -931,15 +930,15 @@ function agregarHtlm4() {
     id10++;
 }
 function agregarHtlm5() {
-    count5++
+    count6++
     let contenedor = document.querySelector('#fotosSecciones2-2');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Tanque `+count6+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -952,14 +951,14 @@ function agregarHtlm5() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-11-`+ id11 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -972,7 +971,7 @@ function agregarHtlm5() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-12-`+ id12 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -980,7 +979,7 @@ function agregarHtlm5() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Procedimiento Tanque #`+ count6 +`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1007,15 +1006,15 @@ function agregarHtlm5() {
     id12++;
 }
 function agregarHtlm6() {
-    count6++
+    count7++
     let contenedor = document.querySelector('#fotosSecciones2-3');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Equipo `+count7+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1028,14 +1027,14 @@ function agregarHtlm6() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-13-`+ id13 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1048,7 +1047,7 @@ function agregarHtlm6() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-14-`+ id14 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -1056,7 +1055,7 @@ function agregarHtlm6() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Control Ventas #`+ count7 +`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1083,15 +1082,15 @@ function agregarHtlm6() {
     id14++;
 }
 function agregarHtlm7() {
-    count7++
+    count8++
     let contenedor = document.querySelector('#fotosSecciones2-4');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Equipo `+count8+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1104,14 +1103,14 @@ function agregarHtlm7() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-15-`+ id15 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1124,7 +1123,7 @@ function agregarHtlm7() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-16-`+ id16 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -1132,7 +1131,7 @@ function agregarHtlm7() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Tablero Eléctrico #`+ count8 +`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1159,15 +1158,15 @@ function agregarHtlm7() {
     id16++;
 }
 function agregarHtlm8() {
-    count8++
+    count9++
     let contenedor = document.querySelector('#fotosSecciones3-1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Equipo `+count9+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1180,14 +1179,14 @@ function agregarHtlm8() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-17-`+ id17 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1200,7 +1199,7 @@ function agregarHtlm8() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-18-`+ id18 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -1208,7 +1207,7 @@ function agregarHtlm8() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Procedimiento Equipo #`+ count9 +`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1235,15 +1234,15 @@ function agregarHtlm8() {
     id18++;
 }
 function agregarHtlm9() {
-    count9++
+    count10++
     let contenedor = document.querySelector('#fotosSecciones3-2');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Tanque `+ count10 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1256,14 +1255,14 @@ function agregarHtlm9() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-19-`+ id19 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1276,7 +1275,7 @@ function agregarHtlm9() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-20-`+ id20 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -1284,7 +1283,7 @@ function agregarHtlm9() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Procedimiento Tanque #`+count10+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1311,15 +1310,15 @@ function agregarHtlm9() {
     id20++;
 }
 function agregarHtlm10() {
-    count10++
+    count11++
     let contenedor = document.querySelector('#fotosSecciones3-3');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Equipo `+ count11 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1332,14 +1331,14 @@ function agregarHtlm10() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-21-`+ id21 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1352,7 +1351,7 @@ function agregarHtlm10() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-22-`+ id22 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -1360,7 +1359,7 @@ function agregarHtlm10() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Control Ventas #`+count11+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1387,15 +1386,15 @@ function agregarHtlm10() {
     id22++;
 }
 function agregarHtlm11() {
-    count11++
+    count12++
     let contenedor = document.querySelector('#fotosSecciones3-4');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row">
-                        <h1> Equipo1</h1>
+    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+                        <h1> Equipo `+ count12 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1408,14 +1407,14 @@ function agregarHtlm11() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-23-`+ id23 + `" accept="image/*">
                                     </label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container">
+                                <div class="container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -1428,7 +1427,7 @@ function agregarHtlm11() {
                                         </div>
                                     </div>
                                     <label class="botonLabel d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;">Agregar Fotos</p>
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
                                         <input type="file" id="file-24-`+ id24 + `" accept="image/*">
                                     </label>                                                
                                 </div>
@@ -1436,7 +1435,7 @@ function agregarHtlm11() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento TANQUE #1</h1>
+                                    <h1>Descripción Tablero Eléctrico #`+count12+`</h1>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
