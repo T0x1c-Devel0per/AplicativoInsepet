@@ -177,7 +177,7 @@ header {
 
 .topnav {
     overflow: hidden;
-    background-color: #000000;
+    background-color: #ffffff;
     width: 80%;
     height: 70px;
     margin: auto;
@@ -190,7 +190,7 @@ header {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 24px 20px;
     text-decoration: none;
@@ -333,7 +333,7 @@ header {
     }
 }
 /******************************header**********************/
-$primary: #26272b;
+$primary: #7b7b7b;
 
 #canvas{
     width: 100%;
@@ -363,7 +363,6 @@ h1 {
     letter-spacing: .1ch;
     font-weight: 300;
     margin: 0;
-    opacity: .5;
 }
 
 .canvas-wrap {
