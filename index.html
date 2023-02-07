@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="/JS/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="/JS/html2pdf.bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/jsPDF/dist/jspdf.min.js"></script>
     <script src="/JS/printThis.js"></script>
     
 </head>
@@ -45,9 +43,7 @@
         <div id="encabezado" style="background-color: #474747; display: none;">
             <div class="container">
                 <div class="container" style="position: absolute;">
-                    <div class="row">
-                        <h1 style="font-size: 25px; text-align: center;">Informe Mantenimiento EDS</h1>
-        
+                    <div class="row">        
                         <div class="col-4">
                             <img src="/IMG/logo-insepet1.png">
                         </div>
@@ -68,6 +64,7 @@
             </svg>
         </div>
         <div class="container" id="seccion1">
+            <h1 style="font-size: 25px; text-align: center;">Informe Mantenimiento EDS</h1>
             <div class="col" id="infoImportante" style="display: block; margin-top: 25px;">
                 <div class="card mb-12">
                     <img class="card-img-top" src="/IMG/headerFondo.jpg" alt="Card image cap" style="height: 200px;">
@@ -154,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="seccionApp02" style="display: none;">
+        <div class="container" id="seccionApp02" style="display: block;">
             <div class="container" id="tituloSeleccion">
                 <h1 class="container d-flex justify-content-center" style="text-align: center; padding-top: 200px;">Seleccione tipo de mantenimiento</h1>
             </div>   
@@ -230,11 +227,12 @@
                                 </label>
                             </div>
                         </div>
+                        
                     </div>
                     <div id="tablaDispensadores1" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas1-1">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list8">
                                         <thead class="table-dark">
@@ -248,7 +246,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td></td>
+                                                <td aria-required="true"></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -256,7 +254,7 @@
                                             </tr>        
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add8" onclick="agregarHtlm();">
+                                    <button class="btn-info" id="add8" type="submit">
                                     <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -302,12 +300,15 @@
                                                 <p style="color: white;"><img src="/IMG/add.png">
                                                 <input type="file" id="file-1-2" accept="image/*">
                                             </label>
+                                            </label>
+                                                                                        
+                                            </label>                                        
                                                                                         
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"style=" margin-bottom: 100px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento Equipo #1</h1>
+                                            <p>Descripción Procedimiento Equipo #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -316,11 +317,15 @@
                         </div>
                         <div class="container" id="fotosSecciones">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add8" onclick="agregarHtlm();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
                     </div>
                     <div id="tablaTanques1" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas1-2">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list9">
                                         <thead class="table-dark">
@@ -340,7 +345,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add9" onclick="agregarHtlm1();">
+                                    <button class="btn-info" id="add9">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -389,10 +394,9 @@
                                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento Tanque #1</h1>
+                                            <p>Descripción Procedimiento Tanque #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -401,11 +405,16 @@
                         </div>
                         <div class="container" id="fotosSecciones1">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add8" onclick="agregarHtlm1();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
+                            </button>
+                        </div>                        
                     </div>
                     <div id="consolaVeeder1" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas1-3">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list10">
                                         <thead class="table-dark">
@@ -428,7 +437,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add10" onclick="agregarHtlm2();">
+                                    <button class="btn-info" id="add10">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -477,10 +486,9 @@
                                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Control Ventas #1</h1>
+                                            <p>Descripción Control Ventas #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -489,11 +497,16 @@
                         </div>
                         <div class="container" id="fotosSecciones2">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add10" onclick="agregarHtlm2();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
+                        
                     </div>               
                     <div id="tablaSistemasnx1" style="display: none;">
                         <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas1-4">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list11">
                                         <thead class="table-dark">
@@ -513,7 +526,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add11" onclick="agregarHtlm3();">
+                                    <button class="btn-info" id="add11">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -562,10 +575,9 @@
                                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Tablero Eléctrico #1</h1>
+                                            <p>Descripción Tablero Eléctrico #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -573,8 +585,13 @@
                             </div>
                         </div>
                         <div class="row" id="tabElectrico1">
-                        
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add11" onclick="agregarHtlm3();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
+                            </button>
+                        </div>
+                        
                     </div>
                 </div>
         
@@ -624,7 +641,7 @@
                     <div id="tablaDispensadores2" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas2-1">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list4">
                                         <thead class="table-dark">
@@ -646,7 +663,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add4" onclick="agregarHtlm4();">
+                                    <button class="btn-info" id="add4">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -694,9 +711,9 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 100px;display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px;display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento Equipo #1</h1>
+                                            <p>Descripción Procedimiento Equipo #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -704,12 +721,16 @@
                             </div>        
                             <div class="container" id="fotosSecciones2-1">
                             </div>
+                            <div class="container d-flex justify-content-center">
+                                <button class="btn-info" id="add4" onclick="agregarHtlm4();">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                            </div>
                         </div>
                     </div>
                     <div id="tablaTanques2" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas2-2">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list5">
                                         <thead class="table-dark">
@@ -729,7 +750,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add5" onclick="agregarHtlm5();">
+                                    <button class="btn-info" id="add5">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -778,10 +799,9 @@
                                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px;display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento Tanque #1</h1>
+                                            <p>Descripción Procedimiento Tanque #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -790,11 +810,16 @@
                         </div>
                         <div class="container" id="fotosSecciones2-2">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add5" onclick="agregarHtlm5();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
+                        
                     </div>
                     <div id="consolaVeeder2" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas2-3">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list6">
                                         <thead class="table-dark">
@@ -817,7 +842,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add6" onclick="agregarHtlm6();">
+                                    <button class="btn-info" id="add6">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -866,10 +891,9 @@
                                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion" style="margin-bottom: 150px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Control Ventas #1</h1>
+                                            <p>Descripción Control Ventas #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -878,11 +902,16 @@
                         </div>
                         <div class="container" id="fotosSecciones2-3">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add6" onclick="agregarHtlm6();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
+                        
                     </div>
                     <div id="tablaSistemasnx2" style="display: none;">
                         <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas2-4">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list7">
                                         <thead class="table-dark">
@@ -902,7 +931,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add7" onclick="agregarHtlm7();">
+                                    <button class="btn-info" id="add7">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -951,10 +980,9 @@
                                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 150px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Tablero Eléctrico #1</h1>
+                                            <p>Descripción Tablero Eléctrico #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -964,6 +992,11 @@
                         <div class="row" id="fotosSecciones2-4">
                         
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add7" onclick="agregarHtlm7();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
+                        
                     </div>
                 </div>
         
@@ -1009,7 +1042,7 @@
                     <div id="tablaDispensadores" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas3-1">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list">
                                         <thead class="table-dark">
@@ -1031,7 +1064,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add" onclick="agregarHtlm8();">
+                                    <button class="btn-info" id="add">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -1080,9 +1113,9 @@
                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion" style= "margin-bottom: 100px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion" style= "margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento Equipo #1</h1>
+                                            <p>Descripción Procedimiento Equipo #1</p>
                                             <textarea class="textArea"
                                                 placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
@@ -1092,12 +1125,17 @@
                         </div>
                         <div class="container" id="fotosSecciones3-1">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add" onclick="agregarHtlm8();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
+                        
                     </div>
                     
                     <div id="tablaTanques" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas3-2">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list1">
                                         <thead class="table-dark">
@@ -1117,7 +1155,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add1" onclick="agregarHtlm9();">
+                                    <button class="btn-info" id="add1">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -1165,10 +1203,9 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style=" margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Procedimiento Tanque #1</h1>
+                                            <p>Descripción Procedimiento Tanque #1</p>
                                             <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
                                     </div>
@@ -1177,12 +1214,17 @@
                         </div>
                         <div class="container" id="fotosSecciones3-2">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add1" onclick="agregarHtlm9();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                        </div>
+                        
                     </div>
                     
                     <div id="consolaVeeder" style="display: none;">
                         <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
                         <div class="row">
-                            <div class="col-12" id="tablas">
+                            <div class="col-12" id="tablas3-3">
                                 <div class="table-content" style="overflow:auto;">
                                     <table class="table table-borded table-responsive table-striped " id="table-list2">
                                         <thead class="table-dark">
@@ -1205,7 +1247,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <button class="btn-info" id="add2" onclick="agregarHtlm10();">
+                                    <button class="btn-info" id="add2">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                 </div>
                             </div>
@@ -1254,10 +1296,9 @@
                     
                                         </div>
                                     </div>
-                                    <div class="col d-flex justify-content-center contDescripcion"
-                                        style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
                                         <div class="container">
-                                            <h1>Descripción Control Ventas #1</h1>
+                                            <p>Descripción Control Ventas #1</p>
                                             <textarea class="textArea"
                                                 placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                         </div>
@@ -1267,12 +1308,18 @@
                         </div>
                         <div class="container" id="fotosSecciones3-3">
                         </div>
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn-info" id="add2" onclick="agregarHtlm10();">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
+                            </button>
+                        </div>
+                        
                     </div>                    
                     <div id="tablaSistemasnx" style="display: none;">
                         <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
                         <div class="container">
                             <div class="row">
-                                <div class="col-12" id="tablas">
+                                <div class="col-12" id="tablas3-4">
                                     <div class="table-content" style="overflow:auto;">
                                         <table class="table table-borded table-responsive table-striped " id="table-list3">
                                             <thead class="table-dark">
@@ -1292,7 +1339,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <button class="btn-info" id="add3" onclick="agregarHtlm11();">
+                                        <button class="btn-info" id="add3">
                                             <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
                                     </div>
                                 </div>
@@ -1341,10 +1388,9 @@
                     
                                             </div>
                                         </div>
-                                        <div class="col d-flex justify-content-center contDescripcion"
-                                            style="display: flex; flex-direction: column; justify-content: center;">
+                                        <div class="col d-flex justify-content-center contDescripcion"style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
                                             <div class="container">
-                                                <h1>Descripción Tablero Eléctrico #1</h1>
+                                                <p>Descripción Tablero Eléctrico #1</p>
                                                 <textarea class="textArea"
                                                     placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                             </div>
@@ -1355,6 +1401,11 @@
                             <div class="row" id="fotosSecciones3-4">
                     
                             </div>
+                            <div class="container d-flex justify-content-center">
+                                <button class="btn-info" id="add3" onclick="agregarHtlm11();">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1481,7 +1532,26 @@
                 $("#encabezado").show();
                 $("#infoImportante").show();
                 $("#exportarpdf").show();
-            })                
+
+                $("#tablas1-1").css("height","750px")
+                $("#tablas1-2").css("height", "750px")
+                $("#tablas1-3").css("height", "750px")
+                $("#tablas1-4").css("height", "750px")
+                $("#tablas1-5").css("height", "750px")
+
+                $("#tablas2-1").css("height", "750px")
+                $("#tablas2-2").css("height", "750px")
+                $("#tablas2-3").css("height", "750px")
+                $("#tablas2-4").css("height", "750px")
+                $("#tablas2-5").css("height", "750px")
+
+                $("#tablas3-1").css("height", "750px")
+                $("#tablas3-2").css("height", "750px")
+                $("#tablas3-3").css("height", "750px")
+                $("#tablas3-4").css("height", "750px")
+                $("#tablas3-5").css("height", "750px")
+
+            })
         });
         function previewBeforeUpload(id) {
                 document.querySelector("#" + id).addEventListener("change", function (e) {

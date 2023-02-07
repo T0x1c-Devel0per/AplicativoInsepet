@@ -471,7 +471,7 @@ function rowEdit(but) {
     IterarCamposEdit($cols, function ($td) {
         var cont = $td.html();
         var div = '<div style="display: none;">' + cont + '</div>';
-        var input = '<input class="form-control input-sm"  value="' + cont + '">';
+        var input = '<input class="form-control input-sm" value="' + cont + '"required>';
         $td.html(div + input);
     });
     FijModoEdit(but);
@@ -556,7 +556,7 @@ function agregarHtlm(){
     let contenedor = document.querySelector('#fotosSecciones');
     let p = document.createElement('div');
     p.setAttribute("class", "container ");
-    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count1+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -601,7 +601,7 @@ function agregarHtlm(){
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento Equipo #`+count1+`</h1>
+                                    <p>Descripción Procedimiento Equipo #`+count1+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -633,7 +633,7 @@ function agregarHtlm1() {
     let contenedor = document.querySelector('#fotosSecciones1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Tanque `+count2+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -677,7 +677,7 @@ function agregarHtlm1() {
                             </div>
                             <div class="col d-flex justify-content-center" style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Procedimiento Tanque #`+count2+`</h1>
+                                    <p>Descripción Procedimiento Tanque #`+count2+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -705,7 +705,7 @@ function agregarHtlm2() {
     let contenedor = document.querySelector('#fotosSecciones2');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count3+`</h1>
                         <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -749,7 +749,7 @@ function agregarHtlm2() {
                             </div>
                             <div class="col d-flex justify-content-center" style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Control Ventas #`+ count3 +`</h1>
+                                    <p>Descripción Control Ventas #`+ count3 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -782,7 +782,7 @@ function agregarHtlm3() {
     let contenedor = document.querySelector('#tabElectrico1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 180px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count4+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -827,7 +827,7 @@ function agregarHtlm3() {
                             <div class="col d-flex justify-content-center contDescripcion"
                                 style="display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
-                                    <h1>Descripción Tablero Electrico #`+count4+`</h1>
+                                    <p>Descripción Tablero Electrico #`+count4+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -858,7 +858,7 @@ function agregarHtlm4() {
     let contenedor = document.querySelector('#fotosSecciones2-1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count5+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -901,9 +901,9 @@ function agregarHtlm4() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Procedimiento Equipo #`+count5+`</h1>
+                                    <p>Descripción Procedimiento Equipo #`+count5+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -934,7 +934,7 @@ function agregarHtlm5() {
     let contenedor = document.querySelector('#fotosSecciones2-2');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Tanque `+count6+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -977,9 +977,9 @@ function agregarHtlm5() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Procedimiento Tanque #`+ count6 +`</h1>
+                                    <p>Descripción Procedimiento Tanque #`+ count6 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1010,7 +1010,7 @@ function agregarHtlm6() {
     let contenedor = document.querySelector('#fotosSecciones2-3');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count7+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1053,9 +1053,9 @@ function agregarHtlm6() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Control Ventas #`+ count7 +`</h1>
+                                    <p>Descripción Control Ventas #`+ count7 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1086,7 +1086,7 @@ function agregarHtlm7() {
     let contenedor = document.querySelector('#fotosSecciones2-4');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count8+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1129,9 +1129,9 @@ function agregarHtlm7() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Tablero Eléctrico #`+ count8 +`</h1>
+                                    <p>Descripción Tablero Eléctrico #`+ count8 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1162,7 +1162,7 @@ function agregarHtlm8() {
     let contenedor = document.querySelector('#fotosSecciones3-1');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+count9+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1205,9 +1205,9 @@ function agregarHtlm8() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Procedimiento Equipo #`+ count9 +`</h1>
+                                    <p>Descripción Procedimiento Equipo #`+ count9 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1238,7 +1238,7 @@ function agregarHtlm9() {
     let contenedor = document.querySelector('#fotosSecciones3-2');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Tanque `+ count10 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1281,9 +1281,9 @@ function agregarHtlm9() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Procedimiento Tanque #`+count10+`</h1>
+                                    <p>Descripción Procedimiento Tanque #`+count10+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1314,7 +1314,7 @@ function agregarHtlm10() {
     let contenedor = document.querySelector('#fotosSecciones3-3');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+ count11 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1357,9 +1357,9 @@ function agregarHtlm10() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Control Ventas #`+count11+`</h1>
+                                    <p>Descripción Control Ventas #`+count11+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
@@ -1390,7 +1390,7 @@ function agregarHtlm11() {
     let contenedor = document.querySelector('#fotosSecciones3-4');
     let p = document.createElement('div');
     p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 10px; padding-top:50px;">
+    p.innerHTML = `<div class="row" style="padding-bottom: 350px; padding-top:50px;">
                         <h1> Equipo `+ count12 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1433,9 +1433,9 @@ function agregarHtlm11() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center; padding-bottom: 170px;">
+                                style="display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
-                                    <h1>Descripción Tablero Eléctrico #`+count12+`</h1>
+                                    <p>Descripción Tablero Eléctrico #`+count12+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
