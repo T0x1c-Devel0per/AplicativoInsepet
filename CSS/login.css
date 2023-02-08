@@ -416,7 +416,7 @@ header {
     padding: 14px 16px;
   }
   .topnav a:not(:first-child),
-.dropdown .dropbtn {
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {

@@ -37,6 +37,9 @@ input[type="file"] {
 #tablaAtencion ::placeholder{
     text-align: center;
 }
+form-element img {
+    border-radius: 15px;
+}
 
 .imgEncabezado{
     display: flex;
@@ -60,7 +63,7 @@ h1 {
     letter-spacing: 2px;
     font-size: 25px;
     color: #777777;
-    font-size: 3rem;
+    font-size: 35px;
     letter-spacing: .1ch;
     font-weight: 300;
     margin: 0;

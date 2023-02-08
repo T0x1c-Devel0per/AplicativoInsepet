@@ -45,12 +45,12 @@ input[type=file] {
   text-align: center;
 }
 
-#tablaAtencion :-ms-input-placeholder {
+#tablaAtencion ::placeholder {
   text-align: center;
 }
 
-#tablaAtencion ::placeholder {
-  text-align: center;
+form-element img {
+  border-radius: 15px;
 }
 
 .imgEncabezado {
@@ -75,7 +75,7 @@ h1 {
   letter-spacing: 2px;
   font-size: 25px;
   color: #777777;
-  font-size: 3rem;
+  font-size: 35px;
   letter-spacing: 0.1ch;
   font-weight: 300;
   margin: 0;
@@ -300,7 +300,7 @@ header {
     padding: 14px 16px;
   }
   .topnav a:not(:first-child),
-.dropdown .dropbtn {
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -402,19 +402,11 @@ canvas {
   color: rgb(255, 255, 255);
 }
 
-#razonSocial:-ms-input-placeholder {
-  color: rgb(255, 255, 255);
-}
-
 #razonSocial::placeholder {
   color: rgb(255, 255, 255);
 }
 
 #ciudad::-moz-placeholder {
-  color: rgb(255, 255, 255);
-}
-
-#ciudad:-ms-input-placeholder {
   color: rgb(255, 255, 255);
 }
 
@@ -426,19 +418,11 @@ canvas {
   color: rgb(255, 255, 255);
 }
 
-#bandera:-ms-input-placeholder {
-  color: rgb(255, 255, 255);
-}
-
 #bandera::placeholder {
   color: rgb(255, 255, 255);
 }
 
 #eds::-moz-placeholder {
-  color: rgb(255, 255, 255);
-}
-
-#eds:-ms-input-placeholder {
   color: rgb(255, 255, 255);
 }
 
@@ -450,19 +434,11 @@ canvas {
   color: rgb(255, 255, 255);
 }
 
-#tecnicos:-ms-input-placeholder {
-  color: rgb(255, 255, 255);
-}
-
 #tecnicos::placeholder {
   color: rgb(255, 255, 255);
 }
 
 #ott::-moz-placeholder {
-  color: rgb(255, 255, 255);
-}
-
-#ott:-ms-input-placeholder {
   color: rgb(255, 255, 255);
 }
 
@@ -643,15 +619,7 @@ i.material-icons {
 }
 
 .animate {
-  -webkit-animation: ripple 0.4s linear;
-          animation: ripple 0.4s linear;
-}
-
-@-webkit-keyframes ripple {
-  100% {
-    opacity: 0;
-    transform: scale(2.5);
-  }
+  animation: ripple 0.4s linear;
 }
 
 @keyframes ripple {
@@ -767,7 +735,7 @@ tbody, td, tfoot, th, thead, tr {
     padding-bottom: 0;
   }
   .site-footer .copyright-text,
-.site-footer .social-icons {
+  .site-footer .social-icons {
     text-align: center;
   }
 }
