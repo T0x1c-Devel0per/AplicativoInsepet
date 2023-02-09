@@ -29,18 +29,6 @@ input[type=file] {
   height: 200px;
 }
 
-#dispensadores01 {
-  padding-top: 150px;
-}
-
-#TanquesyBombas1 {
-  padding-top: 180px;
-}
-
-#controlVentas1 {
-  padding-top: 180px;
-}
-
 #tablaAtencion ::-moz-placeholder {
   text-align: center;
 }
@@ -447,10 +435,7 @@ canvas {
 }
 
 label {
-  min-height: 25px;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 0px;
   color: #ffffff;
   padding: 5px 0;
 }
@@ -818,11 +803,10 @@ tbody, td, tfoot, th, thead, tr {
 /***************************************************/
 .img-area {
   position: relative;
-  width: 320px;
+  width: 182px;
   height: 200px;
   background: var(--grey);
   margin-bottom: 30px;
-  border-radius: 15px;
   overflow: hidden;
   border: 1px solid black;
 }

@@ -553,59 +553,61 @@ var id23 = 3, id24 = 1;
 
 function agregarHtlm(){
     count1++;
-    let contenedor = document.querySelector('#fotosSecciones');
+    let contenedor = document.querySelector('#tablaDispensadores1');
     let p = document.createElement('div');
-    p.setAttribute("class", "container ");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
-                        <h1> Equipo `+count1+`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-1-`+ id1 + `" id="file-1-` + id1 +`-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
+    p.setAttribute("class", "row ");
+    p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row" style= "padding-top:50px;">
+                        <h1> Equipo `+ count1 + `</h1>
+                        <div class="col-6">
+                            <h1 style="text-align: center;">Antes</h1>
+                            <div class="container container d-grid justify-content-center">
+                                <input type="file" id="file" accept="image/*" hidden>
+                                <div class="img-area" data-img="">
+                                    <div class="form-element">
+                                        <label for="file-1-`+ id1 + `" id="file-1-` + id1 + `-preview">
+                                            <img src="https://bit.ly/3ubuq5o" alt="">
+                                            <div>
+                                                <span>+</span>
+                                            </div>
+                                        </label>
                                     </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-1-`+ id1 +`" accept="image/*">
-                                    </label>
                                 </div>
+                                <label class=" d-flex justify-content-center">
+                                    <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
+                                    <input type="file" id="file-1-`+ id1 + `" accept="image/*">
+                                </label>
                             </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-2-`+ id2 + `" id="file-2-` + id2 +`-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
+                        </div>
+                        <div class="col-6">
+                            <h1 style="text-align: center;">Despues</h1>
+                            <div class="container container d-grid justify-content-center">
+                                <input type="file" id="file" accept="image/*" hidden>
+                                <div class="img-area" data-img="">
+                                    <div class="form-element">
+                                        <label for="file-2-`+ id2 + `" id="file-2-` + id2 + `-preview">
+                                            <img src="https://bit.ly/3ubuq5o" alt="">
+                                            <div>
+                                                <span>+</span>
+                                            </div>
+                                        </label>
                                     </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-2-`+id2+`" accept="image/*">
-                                    </label>                                                
                                 </div>
+                                <label class=" d-flex justify-content-center">
+                                    <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
+                                    <input type="file" id="file-2-`+ id2 + `" accept="image/*">
+                                </label>                                                
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;">
-                                <div class="container">
-                                    <p>Descripción Procedimiento Equipo #`+count1+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
+                        </div>
+                        <div class="col d-flex justify-content-center contDescripcion"style= "margin-bottom:150px; display: flex;flex-direction: column; justify-content: center;">
+                            <div class="container">
+                                <p>Descripción Procedimiento Equipo #`+ count1 +`</p>
+                                <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                             </div>
-                        </div>`;
+                        </div>
+                    </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                    `;
         contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -630,10 +632,11 @@ function agregarHtlm(){
 }
 function agregarHtlm1() {
     count2++;
-    let contenedor = document.querySelector('#fotosSecciones1');
+    let contenedor = document.querySelector('#tablaTanques1');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Tanque `+count2+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -675,13 +678,14 @@ function agregarHtlm1() {
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center" style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="col d-flex justify-content-center" style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
                                     <p>Descripción Procedimiento Tanque #`+count2+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>`;
                                     
     contenedor.appendChild(p);
     function previewBeforeUpload1(id) {
@@ -702,10 +706,15 @@ function agregarHtlm1() {
 }
 function agregarHtlm2() {
     count3++
-    let contenedor = document.querySelector('#fotosSecciones2');
+    let contenedor = document.querySelector('#consolaVeeder1');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#0099ff" fill-opacity="1"
+                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                        </path>
+                    </svg>
+                    <div class="row">
                         <h1> Equipo `+count3+`</h1>
                         <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -747,14 +756,15 @@ function agregarHtlm2() {
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center" style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="col d-flex justify-content-center" style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
                                     <p>Descripción Control Ventas #`+ count3 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>`;
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>`;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -779,10 +789,11 @@ function agregarHtlm2() {
 }
 function agregarHtlm3() {
     count4++
-    let contenedor = document.querySelector('#tabElectrico1');
+    let contenedor = document.querySelector('#tablaSistemasnx1');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+count4+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -825,13 +836,15 @@ function agregarHtlm3() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;">
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;">
                                 <div class="container">
                                     <p>Descripción Tablero Electrico #`+count4+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -855,10 +868,11 @@ function agregarHtlm3() {
 }
 function agregarHtlm4() {
     count5++
-    let contenedor = document.querySelector('#fotosSecciones2-1');
+    let contenedor = document.querySelector('#tablaDispensadores2');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+count5+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -901,13 +915,15 @@ function agregarHtlm4() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Procedimiento Equipo #`+count5+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -931,10 +947,11 @@ function agregarHtlm4() {
 }
 function agregarHtlm5() {
     count6++
-    let contenedor = document.querySelector('#fotosSecciones2-2');
+    let contenedor = document.querySelector('#tablaTanques2');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Tanque `+count6+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -977,13 +994,15 @@ function agregarHtlm5() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Procedimiento Tanque #`+ count6 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -1007,10 +1026,11 @@ function agregarHtlm5() {
 }
 function agregarHtlm6() {
     count7++
-    let contenedor = document.querySelector('#fotosSecciones2-3');
+    let contenedor = document.querySelector('#consolaVeeder2');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+count7+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1053,13 +1073,15 @@ function agregarHtlm6() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Control Ventas #`+ count7 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -1083,10 +1105,11 @@ function agregarHtlm6() {
 }
 function agregarHtlm7() {
     count8++
-    let contenedor = document.querySelector('#fotosSecciones2-4');
+    let contenedor = document.querySelector('#tablaSistemasnx2');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+count8+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1129,13 +1152,15 @@ function agregarHtlm7() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Tablero Eléctrico #`+ count8 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -1159,10 +1184,11 @@ function agregarHtlm7() {
 }
 function agregarHtlm8() {
     count9++
-    let contenedor = document.querySelector('#fotosSecciones3-1');
+    let contenedor = document.querySelector('#tablaDispensadores');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+count9+`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1205,13 +1231,15 @@ function agregarHtlm8() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Procedimiento Equipo #`+ count9 +`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -1235,10 +1263,11 @@ function agregarHtlm8() {
 }
 function agregarHtlm9() {
     count10++
-    let contenedor = document.querySelector('#fotosSecciones3-2');
+    let contenedor = document.querySelector('#tablaTanques');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Tanque `+ count10 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1281,13 +1310,15 @@ function agregarHtlm9() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Procedimiento Tanque #`+count10+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -1311,10 +1342,11 @@ function agregarHtlm9() {
 }
 function agregarHtlm10() {
     count11++
-    let contenedor = document.querySelector('#fotosSecciones3-3');
+    let contenedor = document.querySelector('#consolaVeeder');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+ count11 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1357,13 +1389,15 @@ function agregarHtlm10() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style=" margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Control Ventas #`+count11+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                    </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
@@ -1387,10 +1421,11 @@ function agregarHtlm10() {
 }
 function agregarHtlm11() {
     count12++
-    let contenedor = document.querySelector('#fotosSecciones3-4');
+    let contenedor = document.querySelector('#tablaSistemasnx');
     let p = document.createElement('div');
-    p.setAttribute("class", "container");
-    p.innerHTML = `<div class="row" style="padding-bottom: 450px; padding-top:50px;">
+    p.setAttribute("class", "row");
+    p.innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="row">
                         <h1> Equipo `+ count12 +`</h1>
                             <div class="col-6">
                                 <h1 style="text-align: center;">Antes</h1>
@@ -1433,13 +1468,15 @@ function agregarHtlm11() {
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center contDescripcion"
-                                style="display: flex; flex-direction: column; justify-content: center;>
+                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
                                 <div class="container">
                                     <p>Descripción Tablero Eléctrico #`+count12+`</p>
                                     <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                 </div>
                             </div>
-                        </div>`;
+                    </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                        `;
     contenedor.appendChild(p);
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
