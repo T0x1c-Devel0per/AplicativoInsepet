@@ -161,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="seccionApp02" style="display: block;">
+        <div class="container" id="seccionApp02" style="display: none;">
             <div class="container" id="tituloSeleccion">
                 <h1 class="container d-flex justify-content-center" style="text-align: center; padding-top: 200px;">Seleccione tipo de mantenimiento</h1>
             </div>   
@@ -241,10 +241,6 @@
                 </div>
                 <div id="tablaDispensadores1" style="display: none;">
                     <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
-                    </div>
                     <div class="row">
                         <div class="col-12" id="tablas1-1">
                             <div class="table-content" style="overflow:auto;">
@@ -270,6 +266,10 @@
                                 </table>
                                 <button class="btn-info" id="add8" type="submit">
                                     <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
+                                    <div class="container d-flex justify-content-center" id="AgregarFila">
+                                        <button class="btn-info" onclick="agregarHtlm();">
+                                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
+                                    </div>
                             </div>
                         </div>
                         <div class="container" style="margin-bottom: 100px;">
@@ -344,11 +344,6 @@
                 </div>
                 <div id="tablaTanques1" style="display: none;">
                     <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm1();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
                     <div class="row">
                         <div class="col-12" id="tablas1-2">
                             <div class="table-content" style="overflow:auto;">
@@ -372,6 +367,11 @@
                                 </table>
                                 <button class="btn-info" id="add9">
                                     <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
+                                    <div class="container d-flex justify-content-center">
+                                        <button class="btn-info" onclick="agregarHtlm1();" id="AgregarFila">
+                                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
+                                        </button>
+                                    </div>
                             </div>
                         </div>
                         <div class="container">
@@ -1661,6 +1661,11 @@
             $addButton: $('#add11')
         });
 ///////////////////////////////////////MOSTRAR DIVS////////////////////////////////////////
+        $(document).ready(function(){
+            $("#AgregarFila").click(function(){
+                alert("Se ha agregado una nueva Seccion")
+            })
+        })
         $(document).ready(function () {
             $("#btnComprobar").click(function () {
                 if ($("#btnradio1").is(':checked')) {
