@@ -557,53 +557,58 @@ function agregarHtlm(){
     let p = document.createElement('div');
     p.setAttribute("class", "row ");
     p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row" style= "padding-top:50px;">
+                    <div class="container">
                         <h1> Equipo `+ count1 + `</h1>
-                        <div class="col-6">
-                            <h1 style="text-align: center;">Antes</h1>
-                            <div class="container container d-grid justify-content-center">
-                                <input type="file" id="file" accept="image/*" hidden>
-                                <div class="img-area" data-img="">
-                                    <div class="form-element">
-                                        <label for="file-1-`+ id1 + `" id="file-1-` + id1 + `-preview">
-                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                            <div>
-                                                <span>+</span>
-                                            </div>
-                                        </label>
+                        <div class="row" id="AgregarFila1-2">
+                            <div class="col">
+                                <h1 style="text-align: center;">Antes</h1>
+                                <div class="container container d-grid justify-content-center">
+                                    <input type="file" id="file" accept="image/*" hidden>                                    
+                                    <div class="img-area" data-img="">
+                                        <div class="form-element">
+                                            <label for="file-1-`+ id1 + `" id="file-1-` + id1 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
+                                    <label class=" d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
+                                        <input type="file" id="file-1-`+ id1 + `" accept="image/*">
+                                    </label>
                                 </div>
-                                <label class=" d-flex justify-content-center">
-                                    <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                    <input type="file" id="file-1-`+ id1 + `" accept="image/*">
-                                </label>
+                            </div>
+                            <div class="col">
+                                <h1 style="text-align: center;">Despues</h1>
+                                <div class="container container d-grid justify-content-center">
+                                    <input type="file" id="file" accept="image/*" hidden>
+                                    <div class="img-area" data-img="">
+                                        <div class="form-element">
+                                            <label for="file-2-`+ id2 + `" id="file-2-` + id2 + `-preview">
+                                                <img src="https://bit.ly/3ubuq5o" alt="">
+                                                <div>
+                                                    <span>+</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class=" d-flex justify-content-center">
+                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
+                                        <input type="file" id="file-2-`+ id2 + `" accept="image/*">
+                                    </label>                                                
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <h1 style="text-align: center;">Despues</h1>
-                            <div class="container container d-grid justify-content-center">
-                                <input type="file" id="file" accept="image/*" hidden>
-                                <div class="img-area" data-img="">
-                                    <div class="form-element">
-                                        <label for="file-2-`+ id2 + `" id="file-2-` + id2 + `-preview">
-                                            <img src="https://bit.ly/3ubuq5o" alt="">
-                                            <div>
-                                                <span>+</span>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <label class=" d-flex justify-content-center">
-                                    <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                    <input type="file" id="file-2-`+ id2 + `" accept="image/*">
-                                </label>                                                
-                            </div>
-                        </div>
-                        <div class="col d-flex justify-content-center contDescripcion"style= "margin-bottom:150px; display: flex;flex-direction: column; justify-content: center;">
+                        <div class="row d-flex justify-content-center contDescripcion"
+                            style="display: flex; flex-direction: column; justify-content: center;">
                             <div class="container">
-                                <p>Descripción Procedimiento Equipo #`+ count1 +`</p>
                                 <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                             </div>
+                            <button class="btn-info" id="botonSeccionFotos" onclick="agregarSeccion2()">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                            </button>
                         </div>
                     </div>
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -1500,3 +1505,83 @@ function agregarHtlm11() {
 }
 
 ///////////////////////////////////////////////////////////////////
+var countFotos = 1;
+function agregarSeccion1() {
+    
+    let contenedor = document.querySelector('#AgregarFila1-1');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+countFotos+`" id="file-seccionFotos-1-`+countFotos+`-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos +`" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-"+countFotos);
+    countFotos++
+}
+function agregarSeccion2() {
+
+    let contenedor = document.querySelector('#AgregarFila1-2');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+
