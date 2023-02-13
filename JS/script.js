@@ -250,46 +250,7 @@ function showContent8() {
     }
 }
 /*********************secondDiv******************************/
-function showContent9() {
-    element = document.getElementById("tablaDispensadores2");
-    check = document.getElementById("dispensadores2");
-    if (check.checked) {
-        element.style.display = 'block';
-    }
-    else {
-        element.style.display = 'none';
-    }
-}
-function showContent10() {
-    element = document.getElementById("tablaTanques2");
-    check = document.getElementById("tanque2");
-    if (check.checked) {
-        element.style.display = 'block';
-    }
-    else {
-        element.style.display = 'none';
-    }
-}
-function showContent11() {
-    element = document.getElementById("consolaVeeder2");
-    check = document.getElementById("veeder2");
-    if (check.checked) {
-        element.style.display = 'block';
-    }
-    else {
-        element.style.display = 'none';
-    }
-}
-function showContent12() {
-    element = document.getElementById("tablaSistemasnx2");
-    check = document.getElementById("sistemasnx2");
-    if (check.checked) {
-        element.style.display = 'block';
-    }
-    else {
-        element.style.display = 'none';
-    }
-}
+
 /********************NavBar**************************/
 function NavBar() {
     var x = document.getElementById("myTopnav");
@@ -559,7 +520,7 @@ function agregarHtlm(){
     p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <div class="container">
                         <h1> Equipo `+ count1 + `</h1>
-                        <div class="row" id="AgregarFila1-2">
+                        <div class="row" id="AgregarFila1-`+ count1 +`"style="min-height: 500px;">
                             <div class="col">
                                 <h1 style="text-align: center;">Antes</h1>
                                 <div class="container container d-grid justify-content-center">
@@ -606,7 +567,7 @@ function agregarHtlm(){
                             <div class="container">
                                 <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                             </div>
-                            <button class="btn-info" id="botonSeccionFotos" onclick="agregarSeccion2()">
+                            <button class="btn-info" id="botonSeccionFotos1-`+count1+`" onclick="agregarSeccion`+count1+`()">
                                 <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
                             </button>
                         </div>
@@ -614,6 +575,177 @@ function agregarHtlm(){
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
                     `;
         contenedor.appendChild(p);
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-2").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-2").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-3").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-3").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-4").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-4").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-5").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-5").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-6").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-6").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-7").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-7").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-8").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-8").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-9").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-9").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-10").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-10").css("display", "none")
+            }
+        })
+    })
+
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-11").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-11").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-12").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-12").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-13").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-13").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-14").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-14").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-15").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-15").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-16").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-16").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-17").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-17").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos1-18").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos1-18").css("display", "none")
+            }
+        })
+    })
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
             if (e.target.files.size < 200){
@@ -633,20 +765,22 @@ function agregarHtlm(){
     previewBeforeUpload("file-2-"+id2);
     id1++;
     id2++;
-    
 }
+countSeccion = 19;
 function agregarHtlm1() {
     count2++;
+    countSeccion++;
     let contenedor = document.querySelector('#tablaTanques1');
     let p = document.createElement('div');
     p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Tanque `+count2+`</h1>
+    p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="container">
+                        <h1> Tanque `+ count2 + `</h1>
+                        <div class="row" id="AgregarFila2-`+ count2 + `"style="min-height: 500px;">
                             <div class="col">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
+                                <div class="container container d-grid justify-content-center">
+                                    <input type="file" id="file" accept="image/*" hidden>                                    
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
                                             <label for="file-3-`+ id3 + `" id="file-3-` + id3 + `-preview">
@@ -665,7 +799,7 @@ function agregarHtlm1() {
                             </div>
                             <div class="col">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
+                                <div class="container container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -679,20 +813,196 @@ function agregarHtlm1() {
                                     </div>
                                     <label class=" d-flex justify-content-center">
                                         <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-4-`+ id4 +`" accept="image/*">
+                                        <input type="file" id="file-4-`+ id4 + `" accept="image/*">
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center" style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;">
-                                <div class="container">
-                                    <p>Descripción Procedimiento Tanque #`+count2+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>`;
+                        <div class="row d-flex justify-content-center contDescripcion"
+                            style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="container">
+                                <textarea class="textArea" placeholder="Describa el proceso que se realizado a los tanques...."></textarea>
+                            </div>
+                            <button class="btn-info" id="botonSeccionFotos2-`+ count2 + `" onclick="agregarSeccion` + countSeccion +`()">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                            </button>
+                        </div>
+                    </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                    `;
                                     
     contenedor.appendChild(p);
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-2").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-2").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-3").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-3").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-4").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-4").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-5").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-5").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-6").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-6").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-7").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-7").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-8").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-8").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-9").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-9").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-10").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-10").css("display", "none")
+            }
+        })
+    })
+
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-11").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-11").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-12").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-12").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-13").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-13").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-14").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-14").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-15").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-15").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-16").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-16").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-17").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-17").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos2-18").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos2-18").css("display", "none")
+            }
+        })
+    })
     function previewBeforeUpload1(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
             if (e.target.files.length == 0) {
@@ -709,22 +1019,21 @@ function agregarHtlm1() {
     id3++;
     id4++;
 }
+countSeccion1 = 37;
 function agregarHtlm2() {
-    count3++
+    count3++;
+    countSeccion1++;
     let contenedor = document.querySelector('#consolaVeeder1');
     let p = document.createElement('div');
     p.setAttribute("class", "row");
-    p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#0099ff" fill-opacity="1"
-                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                        </path>
-                    </svg>
-                    <div class="row">
-                        <h1> Equipo `+count3+`</h1>
-                        <div class="col-6">
+    p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="container">
+                        <h1> Control Ventas `+ count3 + `</h1>
+                        <div class="row" id="AgregarFila3-`+ count3 + `"style="min-height: 500px;">
+                            <div class="col">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
+                                <div class="container container d-grid justify-content-center">
+                                    <input type="file" id="file" accept="image/*" hidden>                                    
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
                                             <label for="file-5-`+ id5 + `" id="file-5-` + id5 + `-preview">
@@ -741,9 +1050,9 @@ function agregarHtlm2() {
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
+                                <div class="container container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -761,16 +1070,191 @@ function agregarHtlm2() {
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center" style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;">
-                                <div class="container">
-                                    <p>Descripción Control Ventas #`+ count3 +`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
+                        </div>
+                        <div class="row d-flex justify-content-center contDescripcion"
+                            style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="container">
+                                <textarea class="textArea" placeholder="Describa el proceso que se realizado al Sistema...."></textarea>
                             </div>
+                            <button class="btn-info" id="botonSeccionFotos3-`+ count3 + `" onclick="agregarSeccion` + countSeccion1 +`()">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                            </button>
                         </div>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>`;
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                    `;
     contenedor.appendChild(p);
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-2").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-2").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-3").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-3").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-4").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-4").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-5").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-5").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-6").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-6").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-7").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-7").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-8").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-8").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-9").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-9").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-10").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-10").css("display", "none")
+            }
+        })
+    })
+
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-11").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-11").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-12").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-12").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-13").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-13").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-14").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-14").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-15").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-15").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-16").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-16").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-17").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-17").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos3-18").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos3-18").css("display", "none")
+            }
+        })
+    })
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
             if (e.target.files.size < 200) {
@@ -792,18 +1276,21 @@ function agregarHtlm2() {
     id6++;
 
 }
+countSeccion2 = 55;
 function agregarHtlm3() {
-    count4++
+    count4++;
+    countSeccion2++;
     let contenedor = document.querySelector('#tablaSistemasnx1');
     let p = document.createElement('div');
     p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+count4+`</h1>
-                            <div class="col-6">
+    p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                    <div class="container">
+                        <h1> Tablero Electrico `+ count4 + `</h1>
+                        <div class="row" id="AgregarFila4-`+ count4 + `"style="min-height: 500px;">
+                            <div class="col">
                                 <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
+                                <div class="container container d-grid justify-content-center">
+                                    <input type="file" id="file" accept="image/*" hidden>                                    
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
                                             <label for="file-7-`+ id7 + `" id="file-7-` + id7 + `-preview">
@@ -820,9 +1307,9 @@ function agregarHtlm3() {
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col">
                                 <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
+                                <div class="container container d-grid justify-content-center">
                                     <input type="file" id="file" accept="image/*" hidden>
                                     <div class="img-area" data-img="">
                                         <div class="form-element">
@@ -840,17 +1327,191 @@ function agregarHtlm3() {
                                     </label>                                                
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;">
-                                <div class="container">
-                                    <p>Descripción Tablero Electrico #`+count4+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
+                        <div class="row d-flex justify-content-center contDescripcion"
+                            style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="container">
+                                <textarea class="textArea" placeholder="Describa el proceso que se realizado al Sistema...."></textarea>
+                            </div>
+                            <button class="btn-info" id="botonSeccionFotos4-`+ count4 + `" onclick="agregarSeccion` + countSeccion2 +`()">
+                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                            </button>
+                        </div>
+                    </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                    `;
     contenedor.appendChild(p);
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-2").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-2").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-3").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-3").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-4").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-4").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-5").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-5").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-6").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-6").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-7").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-7").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-8").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-8").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-9").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-9").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-10").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-10").css("display", "none")
+            }
+        })
+    })
+
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-11").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-11").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-12").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-12").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-13").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-13").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-14").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-14").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-15").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-15").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-16").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-16").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-17").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-17").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotos4-18").click(function () {
+
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotos4-18").css("display", "none")
+            }
+        })
+    })
     function previewBeforeUpload(id) {
         document.querySelector("#" + id).addEventListener("change", function (e) {
             if (e.target.files.size < 200) {
@@ -1507,7 +2168,7 @@ function agregarHtlm11() {
 ///////////////////////////////////////////////////////////////////
 var countFotos = 1;
 function agregarSeccion1() {
-    
+
     let contenedor = document.querySelector('#AgregarFila1-1');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
@@ -1516,14 +2177,14 @@ function agregarSeccion1() {
                         <br><br>
                         <div class="img-area" data-img="">
                             <div class="form-element">
-                                <label for="file-seccionFotos-1-`+countFotos+`" id="file-seccionFotos-1-`+countFotos+`-preview">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
                                     <img src="https://bit.ly/3ubuq5o" alt="">
                                 </label>
                             </div>
                         </div>
                         <label class=" d-flex justify-content-center">
                             <p style="color: white; padding-bottom: 0px;">
-                            <input type="file" id="file-seccionFotos-1-`+ countFotos +`" accept="image/*">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
                         </label>                                                
                     </div>`;
     contenedor.appendChild(p);
@@ -1542,7 +2203,7 @@ function agregarSeccion1() {
             document.querySelector("#" + id + "-preview img").src = url;
         });
     }
-    previewBeforeUpload("file-seccionFotos-1-"+countFotos);
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
     countFotos++
 }
 function agregarSeccion2() {
@@ -1662,4 +2323,2700 @@ function agregarSeccion4() {
     previewBeforeUpload("file-seccionFotos-1-" + countFotos);
     countFotos++
 }
+function agregarSeccion5() {
 
+    let contenedor = document.querySelector('#AgregarFila1-5');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion6() {
+
+    let contenedor = document.querySelector('#AgregarFila1-6');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion7() {
+
+    let contenedor = document.querySelector('#AgregarFila1-7');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion8() {
+
+    let contenedor = document.querySelector('#AgregarFila1-8');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion9() {
+
+    let contenedor = document.querySelector('#AgregarFila1-9');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion10() {
+
+    let contenedor = document.querySelector('#AgregarFila1-10');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion11() {
+
+    let contenedor = document.querySelector('#AgregarFila1-11');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion12() {
+
+    let contenedor = document.querySelector('#AgregarFila1-12');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion13() {
+
+    let contenedor = document.querySelector('#AgregarFila1-13');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion14() {
+
+    let contenedor = document.querySelector('#AgregarFila1-14');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion15() {
+
+    let contenedor = document.querySelector('#AgregarFila1-15');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion16() {
+
+    let contenedor = document.querySelector('#AgregarFila1-16');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion17() {
+
+    let contenedor = document.querySelector('#AgregarFila1-17');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion18() {
+
+    let contenedor = document.querySelector('#AgregarFila1-18');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+/******************************************************************************/
+var countFotos = 1;
+function agregarSeccion19() {
+
+    let contenedor = document.querySelector('#AgregarFila2-1');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion20() {
+
+    let contenedor = document.querySelector('#AgregarFila2-2');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion21() {
+
+    let contenedor = document.querySelector('#AgregarFila2-3');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion22() {
+
+    let contenedor = document.querySelector('#AgregarFila2-4');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion23() {
+
+    let contenedor = document.querySelector('#AgregarFila2-5');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion24() {
+
+    let contenedor = document.querySelector('#AgregarFila2-6');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion25() {
+
+    let contenedor = document.querySelector('#AgregarFila2-7');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion26() {
+
+    let contenedor = document.querySelector('#AgregarFila2-8');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion27() {
+
+    let contenedor = document.querySelector('#AgregarFila2-9');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion28() {
+
+    let contenedor = document.querySelector('#AgregarFila2-10');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion29() {
+
+    let contenedor = document.querySelector('#AgregarFila2-11');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion30() {
+
+    let contenedor = document.querySelector('#AgregarFila2-12');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion31() {
+
+    let contenedor = document.querySelector('#AgregarFila2-13');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion32() {
+
+    let contenedor = document.querySelector('#AgregarFila2-14');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion33() {
+
+    let contenedor = document.querySelector('#AgregarFila2-15');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion34() {
+
+    let contenedor = document.querySelector('#AgregarFila2-16');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion35() {
+
+    let contenedor = document.querySelector('#AgregarFila2-17');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion36() {
+
+    let contenedor = document.querySelector('#AgregarFila2-18');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+/*************************************************************************************************/
+var countFotos = 1;
+function agregarSeccion37() {
+
+    let contenedor = document.querySelector('#AgregarFila3-1');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion38() {
+
+    let contenedor = document.querySelector('#AgregarFila3-2');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion39() {
+
+    let contenedor = document.querySelector('#AgregarFila3-3');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion40() {
+
+    let contenedor = document.querySelector('#AgregarFila3-4');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion41() {
+
+    let contenedor = document.querySelector('#AgregarFila3-5');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion42() {
+
+    let contenedor = document.querySelector('#AgregarFila3-6');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion43() {
+
+    let contenedor = document.querySelector('#AgregarFila3-7');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion44() {
+
+    let contenedor = document.querySelector('#AgregarFila3-8');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion45() {
+
+    let contenedor = document.querySelector('#AgregarFila3-9');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion46() {
+
+    let contenedor = document.querySelector('#AgregarFila3-10');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion47() {
+
+    let contenedor = document.querySelector('#AgregarFila3-11');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion48() {
+
+    let contenedor = document.querySelector('#AgregarFila3-12');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion49() {
+
+    let contenedor = document.querySelector('#AgregarFila3-13');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion50() {
+
+    let contenedor = document.querySelector('#AgregarFila3-14');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion51() {
+
+    let contenedor = document.querySelector('#AgregarFila3-15');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion52() {
+
+    let contenedor = document.querySelector('#AgregarFila3-16');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion53() {
+
+    let contenedor = document.querySelector('#AgregarFila3-17');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion54() {
+
+    let contenedor = document.querySelector('#AgregarFila3-18');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion55() {
+
+    let contenedor = document.querySelector('#AgregarFila3-19');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+/***************************************************************************************************************/
+var countFotos = 1;
+function agregarSeccion55() {
+
+    let contenedor = document.querySelector('#AgregarFila4-1');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion56() {
+
+    let contenedor = document.querySelector('#AgregarFila4-2');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion57() {
+
+    let contenedor = document.querySelector('#AgregarFila4-3');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion58() {
+
+    let contenedor = document.querySelector('#AgregarFila4-4');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion59() {
+
+    let contenedor = document.querySelector('#AgregarFila4-5');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion60() {
+
+    let contenedor = document.querySelector('#AgregarFila4-6');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion61() {
+
+    let contenedor = document.querySelector('#AgregarFila4-7');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion62() {
+
+    let contenedor = document.querySelector('#AgregarFila4-8');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion63() {
+
+    let contenedor = document.querySelector('#AgregarFila4-9');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion64() {
+
+    let contenedor = document.querySelector('#AgregarFila4-10');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion65() {
+
+    let contenedor = document.querySelector('#AgregarFila4-11');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion66() {
+
+    let contenedor = document.querySelector('#AgregarFila4-12');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion67() {
+
+    let contenedor = document.querySelector('#AgregarFila4-13');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion68() {
+
+    let contenedor = document.querySelector('#AgregarFila4-14');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion69() {
+
+    let contenedor = document.querySelector('#AgregarFila4-15');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion70() {
+
+    let contenedor = document.querySelector('#AgregarFila4-16');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion71() {
+
+    let contenedor = document.querySelector('#AgregarFila4-17');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}
+function agregarSeccion72() {
+
+    let contenedor = document.querySelector('#AgregarFila4-18');
+    let p = document.createElement('div');
+    p.setAttribute("class", "col");
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+                        <input type="file" id="file" accept="image/*" hidden>
+                        <br><br>
+                        <div class="img-area" data-img="">
+                            <div class="form-element">
+                                <label for="file-seccionFotos-1-`+ countFotos + `" id="file-seccionFotos-1-` + countFotos + `-preview">
+                                    <img src="https://bit.ly/3ubuq5o" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <label class=" d-flex justify-content-center">
+                            <p style="color: white; padding-bottom: 0px;">
+                            <input type="file" id="file-seccionFotos-1-`+ countFotos + `" accept="image/*">
+                        </label>                                                
+                    </div>`;
+    contenedor.appendChild(p);
+    function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+            if (e.target.files.size < 200) {
+                alert("Imagen muy pesada")
+
+            }
+            else if (e.target.files.length == 0) {
+                return;
+            }
+            let file = e.target.files[0];
+            let url = URL.createObjectURL(file);
+
+            document.querySelector("#" + id + "-preview img").src = url;
+        });
+    }
+    previewBeforeUpload("file-seccionFotos-1-" + countFotos);
+    countFotos++
+}

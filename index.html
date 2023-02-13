@@ -22,7 +22,7 @@
         <div class="container w-100">
             <a href="#">INICIO</a>
             <a href="#seccion1">IMPORTANTE</a>
-            <a href="#seccion2">MANTENIMIENTO</a>
+            <a href="#seccionApp02">MANTENIMIENTO</a>
             <a href="/pages/login.php">LOGIN</a>
             <a href="#inicio"><button id="exportarpdf">EXPORTAR</button></a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
@@ -41,20 +41,21 @@
     </div>
     <div class="container-fluid">
         <div class="container" id="seccion1" style="margin-top: 50px;">
-            
-            <h1>INFORME MANTENIMIENTO</h1>
-            <div class="row">
-                <div class="col">
+            <div class="row d-flex justify-content-center">
+                <div class="col d-flex justify-content-center">
                     <img src="/IMG/certificado1.png">
                 </div>
-                <div class="col">
-                    <img src="/IMG/certificado2.png">
+                <div class="col d-flex justify-content-center">
+                    <img src="/IMG/logo-insepet1.png">
+
                 </div>
-                <div class="col">
-                    <img src="/IMG/logo-insepet1.png
-                    ">
+                <div class="col d-flex justify-content-center">
+                    <img src="/IMG/certificado2.png">
+
                 </div>
             </div>            
+            <h1>INFORME MANTENIMIENTO</h1>
+                  
             <div class="row" id="formRazon">
                 <div class="container d-flex justify-content-center">
                     <div class="col-12" id="infoImportante" style="display: block; width: 100%;">
@@ -182,12 +183,9 @@
                 <div class="col d-flex justify-content-center">
                     <button class="btn-theme-sm  btn-base-bg text-uppercase margin-b-30" style="margin-top:20px"id="btnComprobar">Seleccionar </button>
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <button class="btn-theme-sm  btn-base-bg text-uppercase margin-b-30" style="margin-top:20px" id="ocultarContenido" onclick="ocultarSeccion2() + mostrarSeccion1()">ATRAS</button>
-                </div>
             </div>
             <div id="div1" class="container" style="display:none;">
-                <h1 style="font-size: 20px;font-weight: bold;text-align: center;">Mantenimiento Correctivo</h1>
+                <h1 id ="tituloMantenimientos"style=font-size: 20px;font-weight: bold;text-align: center;">Mantenimiento Correctivo</h1>
                 <div class="container" id="seleccionMant">
                     <div class="row d-flex justify-content-center">
                         <div class="col-sm d-flex justify-content-center">
@@ -255,7 +253,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="container" style="margin-top: 50px;">
                             <div class="row" id="dispensadores01">
                                 <div class="container-fluid" style="min-width: 390px">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -265,7 +263,7 @@
                                     </svg>
                                 </div>
                                 <h1> Equipo 1</h1>
-                                <div class="row" id="AgregarFila1-1">
+                                <div class="row" id="AgregarFila1-1" style="min-height: 500px;">
                                     <div class="col">
                                         <h1 style="text-align: center;">Antes</h1>
                                         <div class="container d-grid justify-content-center">
@@ -314,9 +312,9 @@
                                 <div class="row d-flex justify-content-center contDescripcion"
                                     style="display: flex; flex-direction: column; justify-content: center;">
                                     <div class="container">
-                                        <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                        <textarea class="textArea" placeholder="Describa el proceso que se realizado a los Equipos...."></textarea>
                                     </div>
-                                    <button class="btn-info" id="botonSeccionFotos" onclick="agregarSeccion1()">
+                                    <button class="btn-info" id="botonSeccionFotosp" onclick="agregarSeccion1()">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
                                     </button>
                                 </div>
@@ -358,7 +356,7 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="container"style="margin-top: 50px;">
                             <div class="row" id="TanquesyBombas1">
                                 <div class="container-fluid" style="min-width: 390px">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -368,7 +366,7 @@
                                     </svg>
                                 </div>
                                 <h1> Tanque 1</h1>
-                                <div class="row" id="AgregarFila1-2">
+                                <div class="row" id="AgregarFila2-1" style="min-height: 500px;">
                                     <div class="col">
                                         <h1 style="text-align: center;">Antes</h1>
                                         <div class="container d-grid justify-content-center">
@@ -416,9 +414,9 @@
                                 <div class="row d-flex justify-content-center contDescripcion"
                                     style="display: flex; flex-direction: column; justify-content: center;">
                                     <div class="container">
-                                        <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                        <textarea class="textArea" placeholder="Describa el proceso que se realizado a los Tanques...."></textarea>
                                     </div>
-                                    <button class="btn-info" id="botonSeccionFotos1-2" onclick="agregarSeccion2()">
+                                    <button class="btn-info" id="botonSeccionFotosp1-2" onclick="agregarSeccion19()">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
                                     </button>
                                 </div>
@@ -474,8 +472,8 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <h1> Equipo 1</h1>
-                                <div class="row" id="AgregarFila1-3">
+                                <h1> Control Ventas 1</h1>
+                                <div class="row" id="AgregarFila3-1" style="min-height: 500px;">
                                     <div class="col">
                                         <h1 style="text-align: center;">Antes</h1>
                                         <div class="container d-grid justify-content-center">
@@ -522,9 +520,9 @@
                                 <div class="row d-flex justify-content-center contDescripcion"
                                     style="display: flex; flex-direction: column; justify-content: center;">
                                     <div class="container">
-                                        <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
+                                        <textarea class="textArea" placeholder="Describa el proceso que se realizado al Sistema...."></textarea>
                                     </div>
-                                    <button class="btn-info" id="botonSeccionFotos-1-3" onclick="agregarSeccion3()">
+                                    <button class="btn-info" id="botonSeccionFotosp1-3" onclick="agregarSeccion37()">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
                                     </button>
                                 </div>
@@ -576,8 +574,8 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <h1> Equipo 1</h1>
-                                <div class="row" id="AgregarFila1-4">
+                                <h1> Tablero Electrico 1</h1>
+                                <div class="row" id="AgregarFila4-1" style="min-height: 500px;">
                                     <div class="col">
                                         <h1 style="text-align: center;">Antes</h1>
                                         <div class="container d-grid justify-content-center">
@@ -626,7 +624,7 @@
                                     <div class="container">
                                         <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                                     </div>
-                                    <button class="btn-info" id="botonSeccionFotos-1-4" onclick="agregarSeccion4()">
+                                    <button class="btn-info" id="botonSeccionFotosp1-4" onclick="agregarSeccion55()">
                                         <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
                                     </button>
                                 </div>
@@ -641,927 +639,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div id="div2" class="container" style="display:none; margin-top:250px;">
-                <h1 style="font-size: 20px;font-weight: bold;text-align: center;">Mantenimiento Preventivo</h1>
-                <div class="container" id="seleccionMant1">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/gas-station.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="dispensadores2" value="1"
-                                    onchange="javascript:showContent9()" style="width: 40px; height: 20px;" />
-                                <p>Dispensadores</p>
-                            </label>
-                        </div>
-            
-                        <div class="col-sm d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/gas-storage.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="tanque2" value="1" onchange="javascript:showContent10()"
-                                    style="width: 40px; height: 20px;" />
-                                <p>Tanques y Bombas</p>
-                            </label>
-                        </div>
-            
-                        <div class="col-sm d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/supervision.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="veeder2" value="1" onchange="javascript:showContent11()"
-                                    style="width: 40px; height: 20px;" />
-                                <p>Control Ventas</p>
-                            </label>
-                        </div>
-            
-                        <div class="col-sm d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/electrical-panel.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="sistemasnx2" value="1" onchange="javascript:showContent12()"
-                                    style="width: 40px; height: 20px;" />
-                                <p>Tablero Eléctrico</p>
-                            </label>
-                        </div>
-            
-                    </div>
-                </div>
-            
-                <div id="tablaDispensadores2" style="display: none;">
-                    <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm4();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION</button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas2-1">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list4">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>EQUIPO</td>
-                                            <td>MARCA</td>
-                                            <td>SERIAL</td>
-                                            <td>MODELO</td>
-                                            <td>REFERENCIA</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add4">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="dispensadores01">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Equipo 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-9-1" id="file-9-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-9-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-9-2" id="file-9-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-9-2" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px;display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Procedimiento Equipo #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div id="tablaTanques2" style="display: none;">
-                    <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm5();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas2-2">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list5">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>TANQUE</td>
-                                            <td>PRODUCTO</td>
-                                            <td>CAPACIDAD GL</td>
-                                            <td>ESTADO</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add5">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="TanquesyBombas1">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Tanque 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-11-1" id="file-11-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-11-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-11-2" id="file-11-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-11-2" accept="image/*">
-                                        </label>
-            
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px;display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Procedimiento Tanque #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div id="consolaVeeder2" style="display: none;">
-                    <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm6();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas2-3">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list6">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>SISTEMA</td>
-                                            <td>IMPRESORAS</td>
-                                            <td>LECTORES</td>
-                                            <td>PANTALLAS</td>
-                                            <td>OPERATIVIDAD</td>
-                                            <td>VERSION SISTEMA</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add6">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="controlVentas1">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Equipo 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-13-1" id="file-13-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-13-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-13-2" id="file-13-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-13-2" accept="image/*">
-                                        </label>
-            
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Control Ventas #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div id="tablaSistemasnx2" style="display: none;">
-                    <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm7();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas2-4">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list7">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>REGULADOR</td>
-                                            <td>UPS</td>
-                                            <td>TOTALIZADORES</td>
-                                            <td>PARADA DE EMERGENCIA</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add7">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="controlVentas1">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Equipo 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-15-1" id="file-15-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-15-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-15-2" id="file-15-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-15-2" accept="image/*">
-                                        </label>
-            
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Tablero Eléctrico #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="div3" class="container" style="display:none; margin-top:250px;">
-                <h1 style="font-size: 20px;font-weight: bold;text-align: center;">Puesta En Marcha</h1>
-                <div class="container" id="seleccionMant2">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/gas-station.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="dispensadores" value="1"
-                                    onchange="javascript:showContent1()" style="width: 40px; height: 20px;" />
-                                <p>Dispensadores</p>
-                            </label>
-                        </div>
-                        <div class="col-sm d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/gas-storage.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="tanque" value="1" onchange="javascript:showContent2()"
-                                    style="width: 40px; height: 20px;" />
-                                <p>Tanques y Bombas</p>
-                            </label>
-                        </div>
-                        <div class="col-sm d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/supervision.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="veeder" value="1" onchange="javascript:showContent3()"
-                                    style="width: 40px; height: 20px;" />
-                                <p>Control Ventas</p>
-                            </label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                            <label>
-                                <img src="./IMG/electrical-panel.gif" style="width: 200; height: 200px;">
-                                <input type="checkbox" name="check" id="sistemasnx" value="1" onchange="javascript:showContent4()"
-                                    style="width: 40px; height: 20px;" />
-                                <p>Tablero Eléctrico</p>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            
-                <div id="tablaDispensadores" style="display: none;">
-                    <h1 style="text-align: center;color: #777777;">Dispensadores</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm8();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas3-1">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>EQUIPO</td>
-                                            <td>MARCA</td>
-                                            <td>SERIAL</td>
-                                            <td>MODELO</td>
-                                            <td>REFERENCIA</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container ">
-                            <div class="row" id="dispensadores01">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Equipo 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-17-1" id="file-17-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-17-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-17-2" id="file-17-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-17-2" accept="image/*">
-                                        </label>
-            
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Procedimiento Equipo #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            
-                <div id="tablaTanques" style="display: none;">
-                    <h1 style="text-align: center;color: #777777;">Tanques y Bombas</h1>
-                    <div class="container d-flex justify-content-center" style="margin-bottom: 100px;">
-                        <button class="btn-info" onclick="agregarHtlm9();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas3-2">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list1">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>TANQUE</td>
-                                            <td>PRODUCTO</td>
-                                            <td>CAPACIDAD GL</td>
-                                            <td>ESTADO</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add1">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="TanquesyBombas1">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Tanque 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-19-1" id="file-19-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-19-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-19-2" id="file-19-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-19-2" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style=" margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Procedimiento Tanque #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            
-                <div id="consolaVeeder" style="display: none;">
-                    <h1 style="text-align: center;color: #777777;">Sistema Control Ventas</h1>
-                    <div class="container d-flex justify-content-center" style="margin-bottom: 100px;">
-                        <button class="btn-info" onclick="agregarHtlm10();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas3-3">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list2">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>SISTEMA</td>
-                                            <td>IMPRESORAS</td>
-                                            <td>LECTORES</td>
-                                            <td>PANTALLAS</td>
-                                            <td>OPERATIVIDAD</td>
-                                            <td>VERSION SISTEMA</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add2">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="controlVentas1">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Equipo 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-21-1" id="file-21-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-21-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-            
-                                                <label for="file-21-2" id="file-21-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-21-2" accept="image/*">
-                                        </label>
-            
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Control Ventas #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div id="tablaSistemasnx" style="display: none;">
-                    <h1 style="text-align: center;color: #777777">Tablero Eléctrico</h1>
-                    <div class="container d-flex justify-content-center">
-                        <button class="btn-info" onclick="agregarHtlm11();">
-                            <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR SECCION
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="tablas3-4">
-                            <div class="table-content" style="overflow:auto;">
-                                <table class="table table-borded table-responsive table-striped " id="table-list3">
-                                    <thead class="table-dark">
-                                        <tr style="font-size: 10px;">
-                                            <td>REGULADOR</td>
-                                            <td>UPS</td>
-                                            <td>TOTALIZADORES</td>
-                                            <td>PARADA DE EMERGENCIA</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button class="btn-info" id="add3">
-                                    <span class="glyphicon glyphicon-plus-sign"></span>AGREGAR FILA</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" id="controlVentas1">
-                                <div class="container-fluid" style="min-width: 390px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                        <path fill="#0099ff" fill-opacity="1"
-                                            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h1> Equipo 1</h1>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Antes</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                                                <label for="file-23-1" id="file-23-1-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-23-1" accept="image/*">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h1 style="text-align: center;">Despues</h1>
-                                    <div class="container d-grid justify-content-center">
-                                        <input type="file" id="file" accept="image/*" hidden>
-                                        <div class="img-area" data-img="">
-                                            <div class="form-element">
-                
-                                                <label for="file-23-2" id="file-23-2-preview">
-                                                    <img src="https://bit.ly/3ubuq5o" alt="">
-                                                    <div>
-                                                        <span>+</span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <label class=" d-flex justify-content-center">
-                                            <p style="color: white;"><img src="/IMG/add.png">
-                                                <input type="file" id="file-23-2" accept="image/*">
-                                        </label>
-                
-                                    </div>
-                                </div>
-                                <div class="col d-flex justify-content-center contDescripcion"
-                                    style="margin-bottom: 200px; display: flex; flex-direction: column; justify-content: center;">
-                                    <div class="container">
-                                        <p>Descripción Tablero Eléctrico #1</p>
-                                        <textarea class="textArea"
-                                            placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" style="min-width: 390px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                                <path fill="#0099ff" fill-opacity="1"
-                                    d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                
+            </div>                
         </div>
 
         <footer class="site-footer" id="footerApp">
@@ -1648,76 +726,31 @@
             $addButton: $('#add11')
         });
 ///////////////////////////////////////MOSTRAR DIVS////////////////////////////////////////
-        $(document).ready(function(){
-            $("#AgregarFila").click(function(){
-                alert("Se ha agregado una nueva Seccion")
-            })
-        })
-        $(document).ready(function(){
-            var contadorFotos = 1;            
-            $("#botonSeccionFotos").click(function(){
-                
-                contadorFotos++;
-                if (contadorFotos >= 5) {
-                    $("#botonSeccionFotos").css("display", "none")
-                }
-            })
-        })
-        $(document).ready(function () {
-                var contadorFotos = 1;
-                $("#botonSeccionFotos1-2").click(function () {
-
-                    contadorFotos++;
-                    if (contadorFotos >= 5) {
-                        $("#botonSeccionFotos1-2").css("display", "none")
-                    }
-                })
-        })
-        $(document).ready(function () {
-                var contadorFotos = 1;
-                $("#botonSeccionFotos-1-3").click(function () {
-
-                    contadorFotos++;
-                    if (contadorFotos >= 5) {
-                        $("#botonSeccionFotos-1-3").css("display", "none")
-                    }
-                })
-            })
-            $(document).ready(function () {
-                    var contadorFotos = 1;
-                    $("#botonSeccionFotos-1-4").click(function () {
-
-                        contadorFotos++;
-                        if (contadorFotos >= 5) {
-                            $("#botonSeccionFotos-1-4").css("display", "none")
-                        }
-                    })
-                })
-
-        
         $(document).ready(function () {
             $("#btnComprobar").click(function () {
                 if ($("#btnradio1").is(':checked')) {
                     $("#div1").show();
-                    $("#div2").hide();
-                    $("#div3").hide();
+                    $("#tituloMantenimientos").text('Mantenimiento Correctivo');
+                    alert("Mantenimiento Correctivo")
+
                 }
                 else if ($("#btnradio2").is(':checked')) {
-                    $("#div1").hide();
-                    $("#div2").show();
-                    $("#div3").hide();
+                    $("#div1").show();
+                    $("#tituloMantenimientos").text('Mantenimiento Preventivo');
+                    alert("Mantenimiento Preventivo")
                 }
                 else if ($("#btnradio3").is(':checked')) {
-                    $("#div1").hide();
-                    $("#div2").hide();
-                    $("#div3").show();
+                    $("#div1").show();
+                    $("#tituloMantenimientos").text('Puesta En Marcha');
+                    alert("Puesta En Marcha")
                 }
-                else (
-                    alert("Seleccione el tipo de mantenimiento")
-                )
+                else{
+                    alert("Seleccione el tipo de Mantenimiento")
+                    
+                }
             })
         });
-
+/************************Boton Exportar*****************************/
         $(document).ready(function () {
             $("#exportarpdf").click(function () {
                 $("#tituloInforme").show();
@@ -1741,27 +774,12 @@
                 $("#tablas1-4").css("height", "800px")
                 $("#tablas1-5").css("height", "800px")
 
-                $("#tablas2-1").css("height", "800px")
-                $("#tablas2-2").css("height", "800px")
-                $("#tablas2-3").css("height", "800px")
-                $("#tablas2-4").css("height", "800px")
-                $("#tablas2-5").css("height", "800px")
-
-                $("#tablas3-1").css("height", "800px")
-                $("#tablas3-2").css("height", "800px")
-                $("#tablas3-3").css("height", "800px")
-                $("#tablas3-4").css("height", "800px")
-                $("#tablas3-5").css("height", "890px")
-
                 $("br").css("display", "none")
                 $("#fotoSeccion1-1").css("margin-top", "40px")
                 $("#fotoSeccion1-2").css("margin-top", "40px")
-                
-                
-
             })
         });
-
+/****************************************VisualizarImg******************************************************/
         function previewBeforeUpload(id) {
                 document.querySelector("#" + id).addEventListener("change", function (e) {
                     if (e.target.files.length == 0) {
@@ -1785,30 +803,92 @@
 
         previewBeforeUpload("file-7-1");
         previewBeforeUpload("file-7-2");
-        /************div2************/
-        previewBeforeUpload("file-9-1");
-        previewBeforeUpload("file-9-2");
-        
-        previewBeforeUpload("file-11-1");
-        previewBeforeUpload("file-11-2");
+/**************************************************************/
+    $(document).ready(function () {
+        $("#AgregarFila").click(function () {
+            alert("Se ha agregado una nueva Seccion")
+        })
+    })
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#botonSeccionFotosp").click(function () {
 
-        previewBeforeUpload("file-13-1");
-        previewBeforeUpload("file-13-2");
+            contadorFotos++;
+            if (contadorFotos >= 5) {
+                $("#botonSeccionFotosp").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+            var contadorFotos1 = 1;
+            $("#botonSeccionFotosp1-2").click(function () {
 
-        previewBeforeUpload("file-15-1");
-        previewBeforeUpload("file-15-2");
-        /***************div3************/
+                contadorFotos1++;
+                if (contadorFotos1 >= 5) {
+                    $("#botonSeccionFotosp1-2").css("display", "none")
+                }
+            })
+        })
+    $(document).ready(function () {
+            var contadorFotos2 = 1;
+            $("#botonSeccionFotosp1-3").click(function () {
 
-        previewBeforeUpload("file-17-1");
-        previewBeforeUpload("file-17-2");
+                contadorFotos2++;
+                if (contadorFotos2 >= 5) {
+                    $("#botonSeccionFotosp1-3").css("display", "none")
+                }
+            })
+        })
+    $(document).ready(function () {
+            var contadorFotos3 = 1;
+            $("#botonSeccionFotosp1-4").click(function () {
 
-        previewBeforeUpload("file-19-1");
-        previewBeforeUpload("file-19-2");
+                contadorFotos3++;
+                if (contadorFotos3 >= 5) {
+                    $("#botonSeccionFotosp1-4").css("display", "none")
+                }
+            })
+        })
+/**************************************************************/
+    $(document).ready(function () {
+        var contadorFotos = 1;
+        $("#add8").click(function () {
 
-        previewBeforeUpload("file-21-1");
-        previewBeforeUpload("file-21-2");
+            contadorFotos++;
+            if (contadorFotos >= 18) {
+                $("#add8").css("display", "none")
+            }
+        })
+    })
+    $(document).ready(function () {
+            var contadorFotos = 1;
+            $("#add9").click(function () {
 
-        previewBeforeUpload("file-23-1");
-        previewBeforeUpload("file-23-2");
+                contadorFotos++;
+                if (contadorFotos >= 18) {
+                    $("#add9").css("display", "none")
+                }
+            })
+        })
+     $(document).ready(function () {
+            var contadorFotos = 1;
+            $("#add10").click(function () {
+
+                contadorFotos++;
+                if (contadorFotos >= 18) {
+                    $("#add10").css("display", "none")
+                }
+            })
+        })
+        $(document).ready(function () {
+                var contadorFotos = 1;
+                $("#add11").click(function () {
+
+                    contadorFotos++;
+                    if (contadorFotos >= 18) {
+                        $("#add11").css("display", "none")
+                    }
+                })
+            })
     </script>
 </html>

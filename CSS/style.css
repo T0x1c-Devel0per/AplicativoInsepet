@@ -804,9 +804,8 @@ tbody, td, tfoot, th, thead, tr {
 .img-area {
   position: relative;
   width: 182px;
-  height: 180px;
+  height: 130px;
   background: var(--grey);
-  margin-bottom: 30px;
   overflow: hidden;
   border: 1px solid black;
 }
