@@ -576,7 +576,7 @@ function agregarHtlm(){
                                 </button>
                             </div>
                             <div class="col-sm d-flex justify-content-center">
-                                <button class="btn-info" id="Elimbtn" onclick="EliminarSeccion()">Eliminar Seccion `+count1+`</button>
+                                <button class="btn-info" id="Elimbtn0" onclick="EliminarSeccion()">Eliminar Seccion `+count1+`</button>
                             </div>
                         </div>
                     </div>
@@ -778,11 +778,12 @@ function EliminarSeccion() {
     if (confirm('¿Desea Eliminar Esta Seccion?')) {
         $("#dispensadoresElim" + count1).remove();
     }
-    else{
+    else {
 
     };
     count1--;
 }
+/************************************************************************************************************/
 countSeccion = 19;
 function agregarHtlm1() {
     count2++;
@@ -790,6 +791,7 @@ function agregarHtlm1() {
     let contenedor = document.querySelector('#tablaTanques1');
     let p = document.createElement('div');
     p.setAttribute("class", "row");
+    p.setAttribute("id", "tanquesBombasElim1-" + count2);
     p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <div class="container">
                         <h1> Tanque `+ count2 + `</h1>
@@ -846,7 +848,7 @@ function agregarHtlm1() {
                                 </button>
                             </div>
                             <div class="col-sm d-flex justify-content-center">
-                                <button class="btn-info" id="Elimbtn" onclick="EliminarSeccion()">Eliminar Seccion `+ count1 +`</button>
+                                <button class="btn-info" id="Elimbtn1" onclick="EliminarSeccion1()">Eliminar Seccion `+ count2 +`</button>
                             </div>
                         </div>
                     </div>
@@ -1041,13 +1043,24 @@ function agregarHtlm1() {
     id3++;
     id4++;
 }
+function EliminarSeccion1() {
+    if (confirm('¿Desea Eliminar Esta Seccion?')) {
+        $("#tanquesBombasElim1-" + count2).remove();
+    }
+    else {
+
+    };
+    count2--;
+}
+/*******************************************************/
 countSeccion1 = 37;
 function agregarHtlm2() {
     count3++;
     countSeccion1++;
     let contenedor = document.querySelector('#consolaVeeder1');
     let p = document.createElement('div');
-    p.setAttribute("class", "row");
+    p.setAttribute("id", "consolaVeederElim"+count3);
+    p.setAttribute("class", "row");    
     p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <div class="container">
                         <h1> Control Ventas `+ count3 + `</h1>
@@ -1094,13 +1107,18 @@ function agregarHtlm2() {
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center contDescripcion"
-                            style="display: flex; flex-direction: column; justify-content: center;">
+                            style="display: flex;justify-content: center;">
                             <div class="container">
                                 <textarea class="textArea" placeholder="Describa el proceso que se realizado al Sistema...."></textarea>
                             </div>
-                            <button class="btn-info" id="botonSeccionFotos3-`+ count3 + `" onclick="agregarSeccion` + countSeccion1 +`()">
-                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
-                            </button>
+                            <div class="col d-flex justify-content-center">
+                                <button class="btn-info" id="botonSeccionFotos3-`+ count3 + `" onclick="agregarSeccion` + countSeccion1 +`()">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                                </button>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <button class="btn-info" onclick="EliminarSeccion2()">Eliminar Seccion `+ count3 +`</button>
+                            </div>
                         </div>
                     </div>
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -1298,12 +1316,23 @@ function agregarHtlm2() {
     id6++;
 
 }
+function EliminarSeccion2() {
+    if (confirm('¿Desea Eliminar Esta Seccion?')) {
+        $("#consolaVeederElim"+count3).remove();
+    }
+    else {
+
+    };
+    count3--;
+}
+/*********************************************************************************/
 countSeccion2 = 55;
 function agregarHtlm3() {
     count4++;
     countSeccion2++;
     let contenedor = document.querySelector('#tablaSistemasnx1');
     let p = document.createElement('div');
+    p.setAttribute("id", "sistemaElectricoElim" + count4);
     p.setAttribute("class", "row");
     p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <div class="container">
@@ -1351,13 +1380,20 @@ function agregarHtlm3() {
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center contDescripcion"
-                            style="display: flex; flex-direction: column; justify-content: center;">
+                            style="display: flex;justify-content: center;">
                             <div class="container">
                                 <textarea class="textArea" placeholder="Describa el proceso que se realizado al Sistema...."></textarea>
                             </div>
-                            <button class="btn-info" id="botonSeccionFotos4-`+ count4 + `" onclick="agregarSeccion` + countSeccion2 +`()">
-                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
-                            </button>
+                            <div class= "col">
+                                <button class="btn-info" id="botonSeccionFotos4-`+ count4 + `" onclick="agregarSeccion` + countSeccion2 +`()">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                                </button>
+                            </div>
+                        <div class = "col">
+                            <div class="col d-flex justify-content-center">
+                                <button class="btn-info" onclick="EliminarSeccion3()">Eliminar Seccion `+ count4 +`</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -1553,6 +1589,15 @@ function agregarHtlm3() {
     previewBeforeUpload("file-8-" + id8);
     id7++;
     id8++;
+}
+function EliminarSeccion3() {
+    if (confirm('¿Desea Eliminar Esta Seccion?')) {
+        $("#sistemaElectricoElim" + count4).remove();
+    }
+    else {
+
+    };
+    count4--;
 }
 ///////////////////////////////////////////////////////////////////
 var countFotos = 1;
