@@ -513,9 +513,11 @@ label {
   text-align: center;
   transition: background-color ease-in-out 150ms;
 }
+
 .upload-options:hover {
   background-color: #1a1a1a;
 }
+
 .upload-options input {
   width: 0.1px;
   height: 0.1px;
@@ -524,6 +526,7 @@ label {
   position: absolute;
   z-index: -1;
 }
+
 .upload-options label {
   display: flex;
   align-items: center;
@@ -535,6 +538,7 @@ label {
   cursor: pointer;
   overflow: hidden;
 }
+
 .upload-options label::after {
   content: "add";
   font-family: "Material Icons";
@@ -545,6 +549,7 @@ label {
   left: calc(50% - 1.25rem);
   z-index: 0;
 }
+
 .upload-options label span {
   display: inline-block;
   width: 50%;
@@ -555,6 +560,7 @@ label {
   vertical-align: middle;
   text-align: center;
 }
+
 .upload-options label span:hover i.material-icons {
   color: lightgray;
 }
@@ -570,6 +576,7 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .js--image-preview::after {
   content: "photo_size_select_actual";
   font-family: "Material Icons";
@@ -580,9 +587,11 @@ label {
   left: calc(50% - 2.25rem);
   z-index: 0;
 }
+
 .js--image-preview.js--no-default::after {
   display: none;
 }
+
 .js--image-preview:nth-child(2) {
   background-image: url("http://bastianandre.at/giphy.gif");
 }
@@ -630,7 +639,12 @@ table input {
   background-color: none;
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
   height: 41px;
 }
 
@@ -830,14 +844,14 @@ tbody, td, tfoot, th, thead, tr {
 
 .img-area img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   z-index: 100;
 }
 
@@ -882,4 +896,6 @@ tbody, td, tfoot, th, thead, tr {
 
 .select-image:hover {
   background: var(--dark-blue);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

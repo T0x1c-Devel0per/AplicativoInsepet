@@ -1,3 +1,16 @@
+var contador = 1, count1 = 1, count2 = 1, count3 = 1, count4 = 1, count5 = 1, count6 = 1, count7 = 1, count8 = 1, count9 = 1, count10 = 1, count11 = 1; count12 = 1;
+var id1 = 3, id2 = 1;
+var id3 = 3, id4 = 1;
+var id5 = 3, id6 = 1;
+var id7 = 3, id8 = 1;
+var id9 = 3, id10 = 1;
+var id11 = 3, id12 = 1;
+var id13 = 3, id14 = 1;
+var id15 = 3, id16 = 1;
+var id17 = 3, id18 = 1;
+var id19 = 3, id20 = 1;
+var id21 = 3, id22 = 1;
+var id23 = 3, id24 = 1;
 (function () {
     "use strict";
 
@@ -442,6 +455,7 @@ function rowElim(but) {
     params.onBeforeDelete($row);
     $row.remove();
     params.onDelete();
+    
 }
 function rowAddNew(tabId) {
     var $tab_en_edic = $("#" + tabId);
@@ -497,26 +511,15 @@ function IterarCamposEdit($cols, tarea) {
         }
     }
 }
-/********************AgregarSeccionFotos**************************/
-var contador = 1, count1 = 1, count2 = 1, count3 = 1, count4 = 1, count5 = 1, count6 = 1, count7 = 1, count8 = 1,count9 = 1,count10 = 1,count11 = 1; count12=1;
-var id1 = 3, id2 = 1;
-var id3 = 3, id4 = 1;
-var id5 = 3, id6 = 1;
-var id7 = 3, id8 = 1;
-var id9 = 3, id10 = 1;
-var id11 = 3, id12 = 1;
-var id13 = 3, id14 = 1;
-var id15 = 3, id16 = 1;
-var id17 = 3, id18 = 1;
-var id19 = 3, id20 = 1;
-var id21 = 3, id22 = 1;
-var id23 = 3, id24 = 1;
 
+/********************AgregarSeccionFotos**************************/
 function agregarHtlm(){
     count1++;
     let contenedor = document.querySelector('#tablaDispensadores1');
     let p = document.createElement('div');
     p.setAttribute("class", "row ");
+    p.setAttribute("id", "dispensadoresElim"+count1);
+
     p.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <div class="container">
                         <h1> Equipo `+ count1 + `</h1>
@@ -563,18 +566,23 @@ function agregarHtlm(){
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center contDescripcion"
-                            style="display: flex; flex-direction: column; justify-content: center;">
+                            style="display: flex; justify-content: center;">
                             <div class="container">
                                 <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
                             </div>
-                            <button class="btn-info" id="botonSeccionFotos1-`+count1+`" onclick="agregarSeccion`+count1+`()">
-                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
-                            </button>
+                            <div class="col-sm d-flex justify-content-center">
+                                <button class="btn-info" id="botonSeccionFotos1-`+ count1 + `" onclick="agregarSeccion` + count1 +`()">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                                </button>
+                            </div>
+                            <div class="col-sm d-flex justify-content-center">
+                                <button class="btn-info" id="Elimbtn" onclick="EliminarSeccion()">Eliminar Seccion `+count1+`</button>
+                            </div>
                         </div>
                     </div>
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
                     `;
-        contenedor.appendChild(p);
+        contenedor.appendChild(p);    
     $(document).ready(function () {
         var contadorFotos = 1;
         $("#botonSeccionFotos1-2").click(function () {
@@ -766,6 +774,15 @@ function agregarHtlm(){
     id1++;
     id2++;
 }
+function EliminarSeccion() {
+    if (confirm('¿Desea Eliminar Esta Seccion?')) {
+        $("#dispensadoresElim" + count1).remove();
+    }
+    else{
+
+    };
+    count1--;
+}
 countSeccion = 19;
 function agregarHtlm1() {
     count2++;
@@ -819,13 +836,18 @@ function agregarHtlm1() {
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center contDescripcion"
-                            style="display: flex; flex-direction: column; justify-content: center;">
+                            style="display: flex; justify-content: center;">
                             <div class="container">
                                 <textarea class="textArea" placeholder="Describa el proceso que se realizado a los tanques...."></textarea>
                             </div>
-                            <button class="btn-info" id="botonSeccionFotos2-`+ count2 + `" onclick="agregarSeccion` + countSeccion +`()">
-                                <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
-                            </button>
+                            <div class="col-sm d-flex justify-content-center">
+                                <button class="btn-info" id="botonSeccionFotos2-`+ count2 + `" onclick="agregarSeccion` + countSeccion +`()">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>AÑADIR FOTOGRAFIAS
+                                </button>
+                            </div>
+                            <div class="col-sm d-flex justify-content-center">
+                                <button class="btn-info" id="Elimbtn" onclick="EliminarSeccion()">Eliminar Seccion `+ count1 +`</button>
+                            </div>
                         </div>
                     </div>
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -1532,639 +1554,6 @@ function agregarHtlm3() {
     id7++;
     id8++;
 }
-function agregarHtlm4() {
-    count5++
-    let contenedor = document.querySelector('#tablaDispensadores2');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+count5+`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-9-`+ id9 + `" id="file-9-` + id9 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-9-`+ id9 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-10-`+ id10 + `" id="file-10-` + id10 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-10-`+ id10 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Procedimiento Equipo #`+count5+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-9-" + id9);
-    previewBeforeUpload("file-10-" + id10);
-    id9++;
-    id10++;
-}
-function agregarHtlm5() {
-    count6++
-    let contenedor = document.querySelector('#tablaTanques2');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Tanque `+count6+`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-11-`+ id11 + `" id="file-11-` + id11 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-11-`+ id11 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-12-`+ id12 + `" id="file-12-` + id12 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-12-`+ id12 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Procedimiento Tanque #`+ count6 +`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-11-" + id11);
-    previewBeforeUpload("file-12-" + id12);
-    id11++;
-    id12++;
-}
-function agregarHtlm6() {
-    count7++
-    let contenedor = document.querySelector('#consolaVeeder2');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+count7+`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-13-`+ id13 + `" id="file-13-` + id13 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-13-`+ id13 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-14-`+ id14 + `" id="file-14-` + id14 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-14-`+ id14 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Control Ventas #`+ count7 +`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-13-" + id13);
-    previewBeforeUpload("file-14-" + id14);
-    id13++;
-    id14++;
-}
-function agregarHtlm7() {
-    count8++
-    let contenedor = document.querySelector('#tablaSistemasnx2');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+count8+`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-15-`+ id15 + `" id="file-15-` + id15 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-15-`+ id15 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-16-`+ id16 + `" id="file-16-` + id16 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-16-`+ id16 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Tablero Eléctrico #`+ count8 +`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-15-" + id15);
-    previewBeforeUpload("file-16-" + id16);
-    id15++;
-    id16++;
-}
-function agregarHtlm8() {
-    count9++
-    let contenedor = document.querySelector('#tablaDispensadores');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+count9+`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-17-`+ id17 + `" id="file-17-` + id17 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-17-`+ id17 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-18-`+ id18 + `" id="file-18-` + id18 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-18-`+ id18 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Procedimiento Equipo #`+ count9 +`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-17-" + id17);
-    previewBeforeUpload("file-18-" + id18);
-    id17++;
-    id18++;
-}
-function agregarHtlm9() {
-    count10++
-    let contenedor = document.querySelector('#tablaTanques');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Tanque `+ count10 +`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-19-`+ id19 + `" id="file-19-` + id19 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-19-`+ id19 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-20-`+ id20 + `" id="file-20-` + id20 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-20-`+ id20 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Procedimiento Tanque #`+count10+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-19-" + id19);
-    previewBeforeUpload("file-20-" + id20);
-    id19++;
-    id20++;
-}
-function agregarHtlm10() {
-    count11++
-    let contenedor = document.querySelector('#consolaVeeder');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+ count11 +`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-21-`+ id21 + `" id="file-21-` + id21 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-21-`+ id21 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-22-`+ id22 + `" id="file-22-` + id22 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-22-`+ id22 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style=" margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Control Ventas #`+count11+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                    </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-21-" + id21);
-    previewBeforeUpload("file-22-" + id22);
-    id21++;
-    id22++;
-}
-function agregarHtlm11() {
-    count12++
-    let contenedor = document.querySelector('#tablaSistemasnx');
-    let p = document.createElement('div');
-    p.setAttribute("class", "row");
-    p.innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <div class="row">
-                        <h1> Equipo `+ count12 +`</h1>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Antes</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-23-`+ id23 + `" id="file-23-` + id23 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-23-`+ id23 + `" accept="image/*">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h1 style="text-align: center;">Despues</h1>
-                                <div class="container d-grid justify-content-center">
-                                    <input type="file" id="file" accept="image/*" hidden>
-                                    <div class="img-area" data-img="">
-                                        <div class="form-element">
-                                            <label for="file-24-`+ id24 + `" id="file-24-` + id24 + `-preview">
-                                                <img src="https://bit.ly/3ubuq5o" alt="">
-                                                <div>
-                                                    <span>+</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <label class=" d-flex justify-content-center">
-                                        <p style="color: white; padding-bottom: 0px;"><img src="/IMG/add.png">
-                                        <input type="file" id="file-24-`+ id24 + `" accept="image/*">
-                                    </label>                                                
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center contDescripcion"
-                                style="margin-bottom:220px; display: flex; flex-direction: column; justify-content: center;>
-                                <div class="container">
-                                    <p>Descripción Tablero Eléctrico #`+count12+`</p>
-                                    <textarea class="textArea" placeholder="Describa el proceso que se realizado a los equipos...."></textarea>
-                                </div>
-                            </div>
-                    </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,149.3C672,160,768,224,864,234.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                        `;
-    contenedor.appendChild(p);
-    function previewBeforeUpload(id) {
-        document.querySelector("#" + id).addEventListener("change", function (e) {
-            if (e.target.files.size < 200) {
-                alert("Imagen muy pesada")
-
-            }
-            else if (e.target.files.length == 0) {
-                return;
-            }
-            let file = e.target.files[0];
-            let url = URL.createObjectURL(file);
-            document.querySelector("#" + id + "-preview div").innerText = file.name;
-            document.querySelector("#" + id + "-preview img").src = url;
-        });
-    }
-    previewBeforeUpload("file-23-" + id23);
-    previewBeforeUpload("file-24-" + id24);
-    id23++;
-    id24++;
-}
-
 ///////////////////////////////////////////////////////////////////
 var countFotos = 1;
 function agregarSeccion1() {

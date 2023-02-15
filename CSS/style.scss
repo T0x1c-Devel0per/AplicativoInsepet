@@ -1,42 +1,53 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 * {
     font-family: fatfrank, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
-li{
+li {
     color: rgb(0, 0, 0);
 }
-input[type="file"] {
+
+input[type=file] {
     display: none;
 }
-.botonLabel{
+
+.botonLabel {
     border: 1px solid rgb(0, 0, 0);
     display: inline-block;
     cursor: pointer;
     border-radius: 15px;
     border: 1px solid black;
     background-color: #000000;
-
 }
+
 .encabezado {
     width: 100%;
     height: 200px;
 }
 
-#tablaAtencion ::placeholder{
+#tablaAtencion ::-moz-placeholder {
     text-align: center;
 }
+
+#tablaAtencion ::placeholder {
+    text-align: center;
+}
+
 form-element img {
     border-radius: 15px;
 }
 
-.imgEncabezado{
+.imgEncabezado {
     display: flex;
     position: absolute;
-    padding : 40px 1px 1px 30px
+    padding: 40px 1px 1px 30px;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -44,18 +55,17 @@ body {
     background-color: #ffffff;
 }
 
-#formularioRazon{
+#formularioRazon {
     max-width: 546px;
     max-height: 100%;
 }
-
 
 h1 {
     letter-spacing: 2px;
     font-size: 25px;
     color: #777777;
     font-size: 35px;
-    letter-spacing: .1ch;
+    letter-spacing: 0.1ch;
     font-weight: 300;
     margin: 0;
     text-align: center;
@@ -69,7 +79,6 @@ p {
     line-height: 2;
 }
 
-
 textarea {
     background: none;
     color: #000000;
@@ -77,7 +86,7 @@ textarea {
     height: 100px;
 }
 
-.line{
+.line {
     width: 100%;
     height: 5px;
     background: rgb(193, 193, 193);
@@ -114,16 +123,13 @@ textarea {
     border: none;
 }
 
-
 /*****************************Iconos***************************/
-
 [type=radio] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 
 /* IMAGE STYLES */
 [type=radio]+img {
@@ -329,12 +335,12 @@ header {
         text-align: left;
     }
 }
-/******************************header**********************/
-$primary: #7b7b7b;
 
-#canvas{
+/******************************header**********************/
+#canvas {
     width: 100%;
 }
+
 .header,
 .content {
     min-height: 100px;
@@ -346,14 +352,14 @@ $primary: #7b7b7b;
 }
 
 .header {
-    background-color: $primary;
-    // background-image: linear-gradient(to bottom, rgba(#715, .5), transparent);
+    background-color: #7b7b7b;
     color: #ddf;
 }
 
 .content {
-    color: $primary;
+    color: #7b7b7b;
 }
+
 .canvas-wrap {
     max-width: 100%;
     overflow: hidden;
@@ -364,8 +370,8 @@ $primary: #7b7b7b;
 canvas {
     display: block;
 }
-/***************************formulario**********************/
 
+/***************************formulario**********************/
 .btn-theme-sm {
     font-size: 13px;
     font-weight: 600;
@@ -380,6 +386,7 @@ canvas {
     border-color: transparent;
     border-width: 0;
 }
+
 .form-control {
     font-size: 14px;
     font-weight: 400;
@@ -391,21 +398,51 @@ canvas {
     padding-left: 15px;
     border-radius: 5px;
 }
+
+#razonSocial::-moz-placeholder {
+    color: rgb(255, 255, 255);
+}
+
 #razonSocial::placeholder {
     color: rgb(255, 255, 255);
 }
+
+#ciudad::-moz-placeholder {
+    color: rgb(255, 255, 255);
+}
+
 #ciudad::placeholder {
     color: rgb(255, 255, 255);
 }
+
+#bandera::-moz-placeholder {
+    color: rgb(255, 255, 255);
+}
+
 #bandera::placeholder {
     color: rgb(255, 255, 255);
 }
+
+#eds::-moz-placeholder {
+    color: rgb(255, 255, 255);
+}
+
 #eds::placeholder {
     color: rgb(255, 255, 255);
 }
+
+#tecnicos::-moz-placeholder {
+    color: rgb(255, 255, 255);
+}
+
 #tecnicos::placeholder {
     color: rgb(255, 255, 255);
 }
+
+#ott::-moz-placeholder {
+    color: rgb(255, 255, 255);
+}
+
 #ott::placeholder {
     color: rgb(255, 255, 255);
 }
@@ -414,8 +451,8 @@ label {
     font-size: 0px;
     color: #ffffff;
     padding: 5px 0;
-
 }
+
 /*****************************Fotos**********************************/
 .center {
     height: 100%;
@@ -455,60 +492,55 @@ label {
     display: none;
     margin-top: 10px;
 }
-#seccion2{
+
+#seccion2 {
     scroll-behavior: smooth;
 }
 
 /************************************************/
-
-//////////////////////////fotos/////////////////////////
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-// variables
-$base-color: rgb(0, 0, 0);
-$base-font: 'Raleway', sans-serif;
-
-.wrapper{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-
 .box {
-  display: block;
-  min-width: 200px;
-  height: 300px;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  overflow: hidden;
+    display: block;
+    min-width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
 }
 
 .upload-options {
-  position: relative;
-  height: 75px;
-  background-color: $base-color;
-  cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-  transition: background-color ease-in-out 150ms;
-  &:hover {
-    background-color: lighten($base-color, 10%);
-  }
-  & input {
+    position: relative;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    transition: background-color ease-in-out 150ms;
+}
+
+.upload-options:hover {
+    background-color: #1a1a1a;
+}
+
+.upload-options input {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
     z-index: -1;
-  }
-  & label {
+}
+
+.upload-options label {
     display: flex;
     align-items: center;
     width: 100%;
@@ -518,85 +550,92 @@ $base-font: 'Raleway', sans-serif;
     white-space: nowrap;
     cursor: pointer;
     overflow: hidden;
-    &::after {
-      content: 'add'; 
-      font-family: 'Material Icons';
-      position: absolute;
-      font-size: 2.5rem;
-      color: rgba(230, 230, 230, 1);
-      top: calc(50% - 2.5rem);
-      left: calc(50% - 1.25rem);
-      z-index: 0;
-    }
-    & span {
-      display: inline-block;
-      width: 50%;
-      height: 100%;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      vertical-align: middle;
-      text-align: center;
-      &:hover i.material-icons {
-        color: lightgray;        
-      }
-    }
-  }
 }
 
+.upload-options label::after {
+    content: "add";
+    font-family: "Material Icons";
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgb(230, 230, 230);
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 1.25rem);
+    z-index: 0;
+}
+
+.upload-options label span {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.upload-options label span:hover i.material-icons {
+    color: lightgray;
+}
 
 .js--image-preview {
-  height: 240px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-image: url('');
-  background-color: rgb(71, 71, 71);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &::after {
-    content: "photo_size_select_actual"; 
-    font-family: 'Material Icons';
+    height: 240px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("");
+    background-color: rgb(71, 71, 71);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.js--image-preview::after {
+    content: "photo_size_select_actual";
+    font-family: "Material Icons";
     position: relative;
     font-size: 4.5em;
-    color: rgba(230, 230, 230, 1);
+    color: rgb(230, 230, 230);
     top: calc(50% - 3rem);
     left: calc(50% - 2.25rem);
     z-index: 0;
-  }
-  &.js--no-default::after {
+}
+
+.js--image-preview.js--no-default::after {
     display: none;
-  }
-  &:nth-child(2) {
-    background-image: url('http://bastianandre.at/giphy.gif');
-  }
+}
+
+.js--image-preview:nth-child(2) {
+    background-image: url("http://bastianandre.at/giphy.gif");
 }
 
 i.material-icons {
-  transition: color 100ms ease-in-out;
-  font-size: 2.25em;
-  line-height: 55px;
-  color: white;
-  display: block;
+    transition: color 100ms ease-in-out;
+    font-size: 2.25em;
+    line-height: 55px;
+    color: white;
+    display: block;
 }
 
 .drop {
-  display: block;
-  position: absolute;
-  background: transparentize($base-color, .8);
-  border-radius: 100%;
-  transform:scale(0);
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    transform: scale(0);
 }
 
 .animate {
-  animation: ripple 0.4s linear;
+    animation: ripple 0.4s linear;
 }
 
 @keyframes ripple {
-    100% {opacity: 0; transform: scale(2.5);}
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
 }
-///////////////////////////////////////////////////////////
+
 table.table-bordered {
     border: 1px solid rgb(0, 0, 0);
     margin-top: 20px;
@@ -609,14 +648,19 @@ table.table-bordered>thead>tr>th {
 table.table-bordered>tbody>tr>td {
     border: 1px solid rgb(0, 0, 0);
 }
-table input{
+
+table input {
     background-color: none;
 }
-tbody,td,tfoot,th,thead,tr {
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
     height: 41px;
 }
-
-///////////////////////////////////////////////////////////
 
 .site-footer {
     background-color: #26272b;
@@ -628,11 +672,11 @@ tbody,td,tfoot,th,thead,tr {
 
 .site-footer hr {
     border-top-color: #bbb;
-    opacity: 0.5
+    opacity: 0.5;
 }
 
 .site-footer hr.small {
-    margin: 20px 0
+    margin: 20px 0;
 }
 
 .site-footer h6 {
@@ -640,7 +684,7 @@ tbody,td,tfoot,th,thead,tr {
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 .site-footer a {
@@ -654,15 +698,15 @@ tbody,td,tfoot,th,thead,tr {
 
 .footer-links {
     padding-left: 0;
-    list-style: none
+    list-style: none;
 }
 
 .footer-links li {
-    display: block
+    display: block;
 }
 
 .footer-links a {
-    color: #737373
+    color: #737373;
 }
 
 .footer-links a:active,
@@ -673,11 +717,11 @@ tbody,td,tfoot,th,thead,tr {
 }
 
 .footer-links.inline li {
-    display: inline-block
+    display: inline-block;
 }
 
 .site-footer .social-icons {
-    text-align: right
+    text-align: right;
 }
 
 .site-footer .social-icons a {
@@ -687,39 +731,39 @@ tbody,td,tfoot,th,thead,tr {
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: #33353d
+    background-color: #33353d;
 }
 
 .copyright-text {
-    margin: 0
+    margin: 0;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .site-footer [class^=col-] {
-        margin-bottom: 30px
+        margin-bottom: 30px;
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .site-footer {
-        padding-bottom: 0
+        padding-bottom: 0;
     }
 
     .site-footer .copyright-text,
     .site-footer .social-icons {
-        text-align: center
+        text-align: center;
     }
 }
 
 .social-icons {
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
 }
 
 .social-icons li {
     display: inline-block;
-    margin-bottom: 4px
+    margin-bottom: 4px;
 }
 
 .social-icons li.title {
@@ -727,7 +771,7 @@ tbody,td,tfoot,th,thead,tr {
     text-transform: uppercase;
     color: #96a2b2;
     font-weight: 700;
-    font-size: 13px
+    font-size: 13px;
 }
 
 .social-icons a {
@@ -741,53 +785,53 @@ tbody,td,tfoot,th,thead,tr {
     text-align: center;
     margin-right: 8px;
     border-radius: 100%;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear
+    transition: all 0.2s linear;
 }
 
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
     color: #fff;
-    background-color: #29aafe
+    background-color: #29aafe;
 }
 
 .social-icons.size-sm a {
     line-height: 34px;
     height: 34px;
     width: 34px;
-    font-size: 14px
+    font-size: 14px;
 }
-.textArea{
+
+.textArea {
     height: 120px;
     border-radius: 15px;
     padding: 7px;
 }
 
 .social-icons a.facebook:hover {
-    background-color: #3b5998
+    background-color: #3b5998;
 }
 
 .social-icons a.twitter:hover {
-    background-color: #00aced
+    background-color: #00aced;
 }
 
 .social-icons a.linkedin:hover {
-    background-color: #007bb6
+    background-color: #007bb6;
 }
 
 .social-icons a.dribbble:hover {
-    background-color: #ea4c89
+    background-color: #ea4c89;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .social-icons li.title {
         display: block;
         margin-right: 0;
-        font-weight: 600
+        font-weight: 600;
     }
 }
+
 /***************************************************/
 .img-area {
     position: relative;
@@ -817,12 +861,14 @@ tbody,td,tfoot,th,thead,tr {
 }
 
 .img-area img {
+    -o-object-fit: contain;
     object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-position: center;
     object-position: center;
     z-index: 100;
 }
@@ -834,7 +880,7 @@ tbody,td,tfoot,th,thead,tr {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-weight: 500;
     text-align: center;
@@ -843,7 +889,7 @@ tbody,td,tfoot,th,thead,tr {
     align-items: center;
     pointer-events: none;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     z-index: 200;
 }
 
@@ -862,10 +908,12 @@ tbody,td,tfoot,th,thead,tr {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     background-color: #000;
 }
 
 .select-image:hover {
     background: var(--dark-blue);
 }
+
+/*# sourceMappingURL=style.css.map */

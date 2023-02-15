@@ -11,12 +11,12 @@ $filaController=$model->Logear();
 
 if($filaController>0) {
     echo "<h1>Bienvenido Usario</h1>";
-}else{
-    echo "<h1Usuario O Contraseña Incorrectos!</h1>";
-
     header("refresh:2; url= http://localhost/Login/");
-}
+}else{
+    echo "<h1>Usuario O Contraseña Incorrectos!</h1>";
 
+    header("refresh:2; url= http://localhost/Login/pages/login.php");
+}
 ?>
 
 
