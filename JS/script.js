@@ -1684,7 +1684,7 @@ function agregarSeccion3() {
     let contenedor = document.querySelector('#AgregarFila1-3');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-3">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1723,7 +1723,7 @@ function agregarSeccion4() {
     let contenedor = document.querySelector('#AgregarFila1-4');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-4">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1762,7 +1762,7 @@ function agregarSeccion5() {
     let contenedor = document.querySelector('#AgregarFila1-5');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-5">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1801,7 +1801,7 @@ function agregarSeccion6() {
     let contenedor = document.querySelector('#AgregarFila1-6');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-6">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1840,7 +1840,7 @@ function agregarSeccion7() {
     let contenedor = document.querySelector('#AgregarFila1-7');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-7">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1879,7 +1879,7 @@ function agregarSeccion8() {
     let contenedor = document.querySelector('#AgregarFila1-8');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-8">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1918,7 +1918,7 @@ function agregarSeccion9() {
     let contenedor = document.querySelector('#AgregarFila1-9');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-9">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1957,7 +1957,7 @@ function agregarSeccion10() {
     let contenedor = document.querySelector('#AgregarFila1-10');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-10">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -1996,7 +1996,7 @@ function agregarSeccion11() {
     let contenedor = document.querySelector('#AgregarFila1-11');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-11">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2035,7 +2035,7 @@ function agregarSeccion12() {
     let contenedor = document.querySelector('#AgregarFila1-12');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-12">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2074,7 +2074,7 @@ function agregarSeccion13() {
     let contenedor = document.querySelector('#AgregarFila1-13');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-13">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2113,7 +2113,7 @@ function agregarSeccion14() {
     let contenedor = document.querySelector('#AgregarFila1-14');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-14">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2152,7 +2152,7 @@ function agregarSeccion15() {
     let contenedor = document.querySelector('#AgregarFila1-15');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-15">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2191,7 +2191,7 @@ function agregarSeccion16() {
     let contenedor = document.querySelector('#AgregarFila1-16');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-16">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2230,7 +2230,7 @@ function agregarSeccion17() {
     let contenedor = document.querySelector('#AgregarFila1-17');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-17">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2269,7 +2269,7 @@ function agregarSeccion18() {
     let contenedor = document.querySelector('#AgregarFila1-18');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-18">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2310,7 +2310,7 @@ function agregarSeccion19() {
     let contenedor = document.querySelector('#AgregarFila2-1');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-70">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2349,7 +2349,7 @@ function agregarSeccion20() {
     let contenedor = document.querySelector('#AgregarFila2-2');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-19">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2388,7 +2388,7 @@ function agregarSeccion21() {
     let contenedor = document.querySelector('#AgregarFila2-3');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-20">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2427,7 +2427,7 @@ function agregarSeccion22() {
     let contenedor = document.querySelector('#AgregarFila2-4');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-21">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2466,7 +2466,7 @@ function agregarSeccion23() {
     let contenedor = document.querySelector('#AgregarFila2-5');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-22">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2505,7 +2505,7 @@ function agregarSeccion24() {
     let contenedor = document.querySelector('#AgregarFila2-6');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-23">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2544,7 +2544,7 @@ function agregarSeccion25() {
     let contenedor = document.querySelector('#AgregarFila2-7');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-24">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2583,7 +2583,7 @@ function agregarSeccion26() {
     let contenedor = document.querySelector('#AgregarFila2-8');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-25">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2622,7 +2622,7 @@ function agregarSeccion27() {
     let contenedor = document.querySelector('#AgregarFila2-9');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-26">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2661,7 +2661,7 @@ function agregarSeccion28() {
     let contenedor = document.querySelector('#AgregarFila2-10');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-27">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2700,7 +2700,7 @@ function agregarSeccion29() {
     let contenedor = document.querySelector('#AgregarFila2-11');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-28">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2739,7 +2739,7 @@ function agregarSeccion30() {
     let contenedor = document.querySelector('#AgregarFila2-12');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-29">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2778,7 +2778,7 @@ function agregarSeccion31() {
     let contenedor = document.querySelector('#AgregarFila2-13');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-30">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2817,7 +2817,7 @@ function agregarSeccion32() {
     let contenedor = document.querySelector('#AgregarFila2-14');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-31">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2856,7 +2856,7 @@ function agregarSeccion33() {
     let contenedor = document.querySelector('#AgregarFila2-15');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-32">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2895,7 +2895,7 @@ function agregarSeccion34() {
     let contenedor = document.querySelector('#AgregarFila2-16');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-33">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2934,7 +2934,7 @@ function agregarSeccion35() {
     let contenedor = document.querySelector('#AgregarFila2-17');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-34">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -2973,7 +2973,7 @@ function agregarSeccion36() {
     let contenedor = document.querySelector('#AgregarFila2-18');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-35">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3014,7 +3014,7 @@ function agregarSeccion37() {
     let contenedor = document.querySelector('#AgregarFila3-1');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-71">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3053,7 +3053,7 @@ function agregarSeccion38() {
     let contenedor = document.querySelector('#AgregarFila3-2');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-72">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3092,7 +3092,7 @@ function agregarSeccion39() {
     let contenedor = document.querySelector('#AgregarFila3-3');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-36">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3131,7 +3131,7 @@ function agregarSeccion40() {
     let contenedor = document.querySelector('#AgregarFila3-4');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-37">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3170,7 +3170,7 @@ function agregarSeccion41() {
     let contenedor = document.querySelector('#AgregarFila3-5');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-38">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3209,7 +3209,7 @@ function agregarSeccion42() {
     let contenedor = document.querySelector('#AgregarFila3-6');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-39">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3248,7 +3248,7 @@ function agregarSeccion43() {
     let contenedor = document.querySelector('#AgregarFila3-7');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-40">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3287,7 +3287,7 @@ function agregarSeccion44() {
     let contenedor = document.querySelector('#AgregarFila3-8');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-41">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3326,7 +3326,7 @@ function agregarSeccion45() {
     let contenedor = document.querySelector('#AgregarFila3-9');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-42">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3365,7 +3365,7 @@ function agregarSeccion46() {
     let contenedor = document.querySelector('#AgregarFila3-10');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-43">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3404,7 +3404,7 @@ function agregarSeccion47() {
     let contenedor = document.querySelector('#AgregarFila3-11');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-44">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3443,7 +3443,7 @@ function agregarSeccion48() {
     let contenedor = document.querySelector('#AgregarFila3-12');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-45">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3482,7 +3482,7 @@ function agregarSeccion49() {
     let contenedor = document.querySelector('#AgregarFila3-13');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-46">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3521,7 +3521,7 @@ function agregarSeccion50() {
     let contenedor = document.querySelector('#AgregarFila3-14');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-47">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3560,7 +3560,7 @@ function agregarSeccion51() {
     let contenedor = document.querySelector('#AgregarFila3-15');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-48">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3599,7 +3599,7 @@ function agregarSeccion52() {
     let contenedor = document.querySelector('#AgregarFila3-16');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-49">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3638,7 +3638,7 @@ function agregarSeccion53() {
     let contenedor = document.querySelector('#AgregarFila3-17');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-50">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3677,7 +3677,7 @@ function agregarSeccion54() {
     let contenedor = document.querySelector('#AgregarFila3-18');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-51">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3716,7 +3716,7 @@ function agregarSeccion55() {
     let contenedor = document.querySelector('#AgregarFila3-19');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-52">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3757,7 +3757,7 @@ function agregarSeccion55() {
     let contenedor = document.querySelector('#AgregarFila4-1');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-73">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3796,7 +3796,7 @@ function agregarSeccion56() {
     let contenedor = document.querySelector('#AgregarFila4-2');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-1">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-74">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3835,7 +3835,7 @@ function agregarSeccion57() {
     let contenedor = document.querySelector('#AgregarFila4-3');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-53">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3874,7 +3874,7 @@ function agregarSeccion58() {
     let contenedor = document.querySelector('#AgregarFila4-4');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-54">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3913,7 +3913,7 @@ function agregarSeccion59() {
     let contenedor = document.querySelector('#AgregarFila4-5');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-55">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3952,7 +3952,7 @@ function agregarSeccion60() {
     let contenedor = document.querySelector('#AgregarFila4-6');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-56">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -3991,7 +3991,7 @@ function agregarSeccion61() {
     let contenedor = document.querySelector('#AgregarFila4-7');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-57">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4030,7 +4030,7 @@ function agregarSeccion62() {
     let contenedor = document.querySelector('#AgregarFila4-8');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-58">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4069,7 +4069,7 @@ function agregarSeccion63() {
     let contenedor = document.querySelector('#AgregarFila4-9');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-59">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4108,7 +4108,7 @@ function agregarSeccion64() {
     let contenedor = document.querySelector('#AgregarFila4-10');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-60">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4147,7 +4147,7 @@ function agregarSeccion65() {
     let contenedor = document.querySelector('#AgregarFila4-11');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-61">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4186,7 +4186,7 @@ function agregarSeccion66() {
     let contenedor = document.querySelector('#AgregarFila4-12');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-62">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4225,7 +4225,7 @@ function agregarSeccion67() {
     let contenedor = document.querySelector('#AgregarFila4-13');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-63">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4264,7 +4264,7 @@ function agregarSeccion68() {
     let contenedor = document.querySelector('#AgregarFila4-14');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-64">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4303,7 +4303,7 @@ function agregarSeccion69() {
     let contenedor = document.querySelector('#AgregarFila4-15');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-65">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4342,7 +4342,7 @@ function agregarSeccion70() {
     let contenedor = document.querySelector('#AgregarFila4-16');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-66">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4381,7 +4381,7 @@ function agregarSeccion71() {
     let contenedor = document.querySelector('#AgregarFila4-17');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-67">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
@@ -4420,7 +4420,7 @@ function agregarSeccion72() {
     let contenedor = document.querySelector('#AgregarFila4-18');
     let p = document.createElement('div');
     p.setAttribute("class", "col");
-    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-2">
+    p.innerHTML = `<div class="container d-grid justify-content-center" id = "fotoSeccion1-68">
                         <input type="file" id="file" accept="image/*" hidden>
                         <br><br>
                         <div class="img-area" data-img="">
